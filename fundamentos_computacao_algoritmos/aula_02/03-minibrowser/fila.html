@@ -1,0 +1,53 @@
+<script>
+    console.log('[Fila/Queue]');
+    // Qualquer tipo de dado
+    // Uma atrás da outra
+    // Quem entra primeiro, sai primeiro
+    
+    var fila = [
+        'scripts.js',
+        'style.css',
+        'imagem.png'
+        ];
+        
+    //Adiciona na fila
+    fila.push('dog.jpg');
+
+    //Remove o primeiro da fila
+    fila.shift();
+
+    //----------------------------
+    //Receita para criar filas
+    //----------------------------
+    class Queue {
+        constructor(){
+            this.data = []
+        }
+        print() {
+            console.log(this.data);
+        }
+        enqueue(item) {
+            this.data.push(item);
+        }
+        dequeue() {
+            this.data.shift();
+        }
+    }
+
+    //Design First
+    var requests = new Queue();
+    //Open closed
+    //Open: Aberto para extensão
+    //Closed: Fechado para modificação
+    requests.enqueue('scripts.js');
+    requests.dequeue();
+    requests.enqueue('style.js');
+    requests.enqueue('imagem.png');
+    requests.enqueue('dog.jpg');
+    requests.print();
+
+    //**** Livro Refactoring Martin Fowler - Java e JavaScript
+
+    
+
+</script>
