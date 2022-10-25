@@ -1,0 +1,99 @@
+Professor - Alessandro Dias
+Aula 01
+
+Introdução
+A Programação Orientada a Objetos é um paradigma de programação com foco em objetos.
+
+Programação orientada a objetos não é uma linguagem de programação nem uma ferramenta ou framework.
+Programação orientada a objetos é um estilo de programação, é um paradigma de programação.
+
+Motivação
+Muitas linguagens implementam orientação a objetos: C++, C-Sharp, Java, JavaScript, Python e Ruby
+Conhecer paradigmas é essencial para qualquer bom profissional de desenvolvimento de software
+
+Contextualização
+Programação Estruturada
+- Paradigma com foco em: Sequência, Decisão, Iteração
+Programação Procedural
+- Paradigma com foco no uso de procedimentos e funções para facilitar o reuso
+Programação Orientada a Objetos
+- Paradigma com foco no uso de objetos, onde cada um contém suas variáveis e funções
+
+Objeto
+- Nome
+- Atributos
+- Métodos
+
+Coleção de dados e/ou funcionalidades com alguma relação entre Sequência
+
+Atributo ou Propriedade
+Um ou mais dados presentes em um objeto
+Possuem um nome único
+Armazenam um valor ou uma referência
+
+Acesso por propriedade ou pela chave do vetor
+
+Métodos
+Uma ou mais funcionalidades presentes em um objeto
+Possuem um nome único
+Representa uma lógica pertinente ao objeto
+
+Criando Objetos:
+Pode ser criado em JavaScript de forma literal
+
+Tipos de Valor:
+representação de valores imutáveis - Number, String, Boolean, Symbol, undefined e null
+
+Exemplo de criação de objeto:
+const empregado = {
+    salarioBase: 5000,
+    valorHoraExtra: 100,
+    qtHorasExtra: 10,
+    calculaSalario: function(){
+        return this.salarioBase + (this.valorHoraExtra * this.qtHorasExtra);
+    }
+};
+
+Conceitos OO:
+Encapsulamento - (Redução de complexidade / Proteção de dados)
+Permitir que atributos e métodos sejam agrupados de certa forma em uma interface bem definida para manipular
+os dados de um objeto de forma eficiente.
+Isolamento entre partes de um programa
+Saber o que um objeto faz e não como ele faz e proteção de atributos.
+
+Abstração - (Redução de complexidade / Maior reuso)
+POO é amplamente baseada na abstração digital da vida real
+Objetos são representações/abstrações do que queremos implementar do que observamos no mundo ao nosso redor
+Buscamos o essencial e deixamos de lado o que não importa, focamos no que realmente precisamos representar em nossos objetos
+
+Herança - (Eliminar redundância no código)
+Permite compartilhamento de atributos e métodos entre objetos
+Reaproveita o código e agrupa o que é comum a diferentes objetos
+Busca identificar e agrupar comportamentos generalizados ou especializados
+Ajuda a eliminar redundâncias
+
+Polimorfismo - (Eliminar lógica desnecessária no código)
+Através da herança é possível alterar um comportamento herdado de um objeto-pai
+Permite um forte separação de interesses
+Limpeza de código, removendo lógica excedente
+
+Sobrescrita
+métodos com o mesmo nome e assinatura em diferentes objetos relacionados por herança
+
+Sobrecarga
+métodos com o mesmo nome mas diferentes assinaturas em diferentes objetos relacionados por herança
+Sobrecarga não é suportada em JavaScript
+
+Criando Objetos:
+Literais
+var nomeDoObjeto = {
+    nomeMembro1: valorMembro1,
+    nomeMembro2: valorMembro2
+};
+
+Fábricas
+Funções que criam e retornam objeto
+
+Construtores
+Protótipos
+Classes

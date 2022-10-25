@@ -1,0 +1,40 @@
+Continuação
+
+Criando Objetos:
+Literais
+var nomeDoObjeto = {
+    nomeMembro1: valorMembro1,
+    nomeMembro2: valorMembro2
+};
+
+Fábricas
+Funções que criam e retornam objeto
+
+Construtores
+Funções que criam objetos
+
+Protótipos
+Mecanismo de herança entre objetos
+JavaScript é descrita como uma linguagem baseada em Protótipos
+Objetos podem ter um objeto de protótipo
+Modelo que fornece atributos e métodos
+Um objeto de protótipo pode ter outro objeto e é chamada cadeia de protótipos
+
+Formas de Acesso de Protótipos
+Object.getPrototypeOf()
+__proto__ (somente na console)
+Em funções construtoras existe a propriedade prototype
+
+Classes
+Modelos para criar objetos
+
+Métodos Estáticos
+Lógica que é executada da mesma forma em qualquer objeto de um tipo ou classe
+Métodos utilitários
+A utilização não requer a criação de um objeto
+
+Visibilidade
+Público ou privado
+
+Identificadores pré-fixados se utiliza # para que o mesmo seja privado
+

@@ -1,0 +1,104 @@
+Professor - Edson Moreno
+Aula 03
+
+Conceitos da linguagem
+JavaScript
+- Linguagem baseada em objetos
+- Dinâmica
+- Fracamente Tipada
+- Interpretada por navegadores
+Podem ser criados scripts que manipulam html e css (frontend)
+Podem ser criados scripts para que sejam executados no backend
+Extensão .js
+
+Linguagem muito flexivel além de estar em constante manutenção e atualização, possui uma comunidade bastante ativa.
+
+Ambiente de desenvolvimento
+Soluções online
+Reduzem a complexidade de instalações
+Propostas:
+https://repl.it/languages/javascript
+https://stackblitz.com/fork/js
+https://ronakshah.net/console
+https://es6console.com
+
+Ambiente local
+Edição de Arquivos - VSCode
+Execução - Node
+
+Variáveis
+var - escopo de função, pode ter valor de inicialização definido
+let - escopo de bloco ou variável local, pode ter valor de inicialização definido
+const - constante com escopo de bloco, atribuição única mas com valores de objeto alterável
+
+Objetos
+JavaScript - Array, Boolean, Date, Math, Number, String, RegExp, Global
+Fornecidos pelo Navegador - Window, Navigator, Screen, History, Location, Console
+API DOM - Document, Event
+
+Tipos de dados
+Undefined - representa um valor de variáveis que não receberam nenhuma atribuição, não foi inicializada
+            e que não pode nem ter seu tipo definido
+Null - representa a ideia de nada ou vazio, já existe um tipo
+
+
+Arrays
+Métodos
+toString() - retornas uma string com os valores do array separados por vírgula
+join() - retorna uma string com os valores do array separados pelo símbolo informado (a.join(" - "))
+concat() - retorna um novo array resultante da concatenação dos arrays passados por parâmetro
+slice(indice, fim) - particiona um array e retorna um novo array com a partição, sem alterar o array original
+indexOf(item, inicio) - retorna o índice do array que contém o elemento item
+lastIndexOf(item, inicio) - retorna o índice da última ocorrencia do elemento item
+includes(item, início) - retorna true caso o array contenha o elemento item
+findIndex(funcaoPredicado) - retorna o índice do primeiro elemento do array conforme a função predicado
+find(funcaoPredicado) - retorna a primeira ocorrência de um elemento no array de acordo com a função de predicado
+forEach(funcaoAplicacao) - itera sobre cada elemento do array e chama a função de aplicação sobre cada um
+sort() e reverse() - comandos de ordenação
+
+Modularização
+É conveniente dividir e organizar o código em módulos
+
+Padrões de Modularização
+CommonJS
+Asynchronous Module Definition
+Universal Module Definition
+ECMAScript 6 Modules
+etc...
+
+CommonJS
+Padrão utilizado por um grande número de pacotes disponibilizados via NPM
+exports.(variavel)
+require(nome do arquivo)
+
+ES6
+Padrão nativo do JavaScript
+export
+import
+
+Desestruturação
+Ideia de desempacotar em vários pedaços
+
+JSON = JavaScript Object Notation
+Formato textual para serialização de dados
+
+Exceções
+throw new Error('Texto da mensagem')
+Criar classe de erro estendendo Error
+
+Funções Assíncronas
+Assíncrono - Não se espera a função chamada terminar sua execução para nosso código seguir em frente
+
+Promises
+Uma função irá retornar uma promessa de um objeto contendo o resultado de interesse no futuro
+
+Async/Await
+Async marca uma função ou método como sendo Assíncrono
+Await quando usada antes de uma expressão que fornece um objeto Promise, faz com que espere até que a Promise
+seja resolvida ou rejeitada
+
+
+
+
+
+
