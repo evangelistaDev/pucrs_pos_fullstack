@@ -1,0 +1,42 @@
+DockerFile - Template para criar imagens docker
+
+docker build -t aula-ubuntu-curl -f Dockerfile .
+docker image ls
+
+Caso seja executado novamente o comando de build da mesma imagem, este mantém o cache.
+Caso o arquivo seja alterado o cache é mantido apenas no que não foi alterado.
+
+Exemplo do terminal
+=> [1/4] FROM docker.io/library/ubuntu
+=> CACHED [2/4] RUN apt update
+=> [3/4] RUN apt install net-tools --yes
+=> [4/4] RUN apt install curl --yes
+
+Atenção na utilização do Cache pois pode interferir na atualização/instalação
+Solução é concatenar os comandos de instalação
+
+Criação do repositório no Docker Hub - https://hub.docker.com/
+Composião do nome da imagem - namespace + repositorio + tag
+Ex.: evangelistadocker/aula-ubuntu-curl:v1
+docker build -t evangelistadocker/aula-ubuntu-curl:v1 -f Dockerfile .
+
+Remover imagens não utilizadas
+docker image prune
+
+Autenticação com o Docker Hub
+docker logout
+docker login
+
+https://hub.docker.com/repository/docker/evangelistadocker/aula-ubuntu-curl
+
+docker tag
+
+Baixar imagem do repositorio
+Ex.:
+docker container run -it evangelistadocker/aula-ubuntu-curl:latest /bin/bash
+
+Adicionar o Dockerfile no Projeto - conversao-temperatura
+
+Criar um .dockerignore
+
+

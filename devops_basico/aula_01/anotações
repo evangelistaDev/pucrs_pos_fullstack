@@ -1,0 +1,124 @@
+Professor - Fabrício Veronez
+
+Etapas na construção de um software:
+Planejamento, Desenvolvimento, Testes e Implantação
+
+Pessoas envolvidas:
+Desenvolvedor | Operação
+
+Junção do Desenvolvedor com a Operação - DevOps
+Interesses em comum, comunicação mais ágil com foco no produto.
+
+Primeira Maneira: Fluxo
+-Análise e otimização dos processos
+-Inclusão de TestesIntegração contínua e deploy contínuo
+-Entregas de baixo risco
+
+Segunda Maneira: Feedback
+-Implementar e coletar métricas
+-Observabilidade - Logs e Trace
+-Testes A/B
+-Feedback dos resultados para replanejamento
+
+Terceira Maneira: Feedback contínuo
+-Aprender com os erros
+-Experimentação controlada
+-Disseminar o conhecimento e padronizar o que dá certo
+
+DevOps
+planejamento->codificação->build->testes->release->deploy->operação->monitoramento
+
+Profissional DevOps é o intermediário entre o Desenvolvedor e o profissional de Operação
+
+Twelve Factor Apps
+-Utilizar formatos declarativos para configuração de ambientes para facilitar automação
+-Garantir maior portabilidade possível entre ambientes
+-Ter compatibilidade com plataformas de nuvem
+-Minimizar o impacto de migração entre ambientes de desenvolvimento e produção
+-Ser escalável sem alterações significativas
+
+Pensar em software como serviço
+
+01 - Base de Código (Codebase) - Git
+02 - Dependências (Dependencies) - Maven, Npm, Nuget
+03 - Configuração (Config) - Variáveis de Ambiente - Linux, Windows, Docker
+04 - Serviços de Apoio (Backing Services)
+05 - Construa, lance e execute (Build, release, run)
+06 - Processos (Process) - Pensar em algo Stateless - sem nenhum armazenamento
+07 - Vínculo de Portas (Port binding)
+08 - Concorrência (Concurrency) - Escalabilidade Horizontal - software
+09 - Descartabilidade (Disposability) - Processos com rápida incialização e encerramento
+10 - Paridade entre desenvolvimento e produção (Dev/Prod Parity) - Confiabilidade entre os ambientes DEV e Prod
+11 - Logs - Registro dos eventos da aplicação - Elastic, Grafana
+12 - Processos administrativos
+
+Versionamento de Código
+Repositórios Git
+
+Utilização do GitHub
+
+Criação da conta no GitHub
+Criar repositório
+Gerar chave SSH - ssh-keygen -t rsa -b 2048 no Command
+Abrir diretório e o arquivo .pub e salvar a chave no GitHub
+
+Clonar o repositório - git clone "repositorio"
+Adicionar arquivo - git add . (todos os arquivos do diretório) Vai para a área de Staged
+Commitar - git commit -m "Comentário"
+Adicionar para o repositório remoto - git push
+Atualizar da base remota - git pull
+
+Branches
+Criar branch - git checkout -b nome_branch
+Listar branches - git branch
+Merge - git merge nome_branch fazendo checkout da main antes e após o merge, git push
+
+Fork
+Cópia de um repositório para a sua conta do github
+Utilização do repositório conversao-temperatura
+
+Containers
+
+Isolamento dos processos, maior controle, portabilidade e idempotencia(comportamento igual)
+Setup do ambiente
+Todos os processos da etapa de criação de ambiente e execução de aplicações serão feitos em containers
+
+Docker
+Imagem - Projeto da execução do container (Template)
+Container - Objeto, construção do container baseado na Imagem
+
+Arquitetura do Docker
+Client
+- docker build
+- docker pull
+- docker run
+Docker Host
+- Docker Daemon
+-- Containers
+-- Imagens
+Registry
+- Repositório de imagens docker (Docker Hub o mais conhecido)
+
+Instalação do Docker
+
+Execução do comando
+Executar imagem - docker container run hello-world
+Listar imagens - docker container ls -a 
+Especificar nome container - docker container run --name meucontainer hello-world
+Executar dentro do terminal docker - docker container run -it ubuntu /bin/bash
+Excluir container - docker container rm <id do container>
+Executar container em background e acessá-lo em execução - docker container run -d nginx após docker container exec -it <id> /bin/bash
+Portbinding - docker container run -d -p 8080:80 nginx
+
+Criar container Mongo DB - Documentação em hub.docker.com
+docker container run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongouser -e MONGO_INITDB_ROOT_PASSWORD=mongopwd mongo
+Utilizar o aplicativo Robo3T para acessar o Mongo DB
+
+Forçar exclusão de container em execução - docker container rm -f <id>
+
+
+
+
+
+
+
