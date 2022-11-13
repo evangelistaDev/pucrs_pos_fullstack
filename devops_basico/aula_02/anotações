@@ -39,4 +39,31 @@ Adicionar o Dockerfile no Projeto - conversao-temperatura
 
 Criar um .dockerignore
 
+Pipeline
+Conjunto de etapas realizadas sequencialmente, caso este seja executado com sucesso, passa para o próximo.
+
+Integração Contínua - CI
+Codificação -> Commit -> Build -> Teste -> Geração do Pacote
+Entrega de código novo ao projeto
+
+Deploy Contínuo - CD
+Release -> Teste -> Aceite - Deploy
+
+CI - Mais próximo do Desenvolvedor
+CD - Mais próximo da Operação
+
+GitHub Actions - Ferramenta utilizada para criação de Pipeline
+-Workflow
+-Events
+-Jobs
+-Steps
+-Actions
+-Runners
+
+Criação da CI em:
+https://github.com/evangelistaDev/conversao-temperatura
+Imagens Docker em:
+https://hub.docker.com/repository/docker/evangelistadocker/aula-conversao-temperatura
+
+
 
