@@ -1,0 +1,72 @@
+Professor - Marco Autélio Souza Mangan
+
+Exemplo da aplicação PetClinic no Github
+Petclinic J2EE
+Petclinic REST
+Petclinic Angular
+
+Utilizar um arquivo Readme.md para explicar como utilizar/instalar a aplicação
+Utilização de badge de Integração Contínua para saber o seu status (Java CI Maven)
+Script com as linhas de comando para facilitar a automação e entendimento de roteiro
+Utilização do Monitoramento da aplicação
+
+Preocupações - DevOps
+Construir - O processo de gerar um sistema executável e testável a partir de código-fonte
+Empacotar - Combinar componentes relacionados em um único item implantável
+Implantar - Iniciar a etapa de ciclo de vida do software em que a operação acontece
+
+Livro - The Devops Adoption Playbook
+
+Devs se preocupam com velocidade, em realizar mudanças
+Ops se preocupam com estabilidade e segurança
+
+Mudanças com DevOps
+Left-shift ou shift-left - Priorizar participação dos envolvidos ao aplicar atividades de garantia de qualidade,
+segurança, privacidade, desempenho, verificação e validação mais cedo no ciclo de vida.
+A Automação produz registro de auditoria ao longo das etapas do ciclo de vida, o que inclui validação e 
+validação do software.
+Mudanças culturais: implantações pequenas, simples e automatizadas que cabem no dia-a-dia da equipe
+Objetivos diversos: velocidade, inovação, escala
+
+Competências Técnicas
+A. Utilizar ferramentas de gerência de configuração
+B. Administrar sistemas operacionais
+C. Adotar integração contínua
+D. Implantar registros de auditoria (logs)
+E. Aprimorar o monitoramento de execução
+F. Facilitar a configuração de senhas, credenciais e conexões
+G. Automatizar tarefas: construção, teste, revisão e instalação
+H. Aprimorar a segurança da aplicação
+
+Automação de tarefas
+Automação reduz o tempo de executar a atividade e reduz a chance de erros
+
+Gerência de configuração
+- Versões e mudanças - Git, GitHub
+-- https://learngitbranching.js.org
+- Dependências - Maven, Gradle, Npm, Yarn
+-- https://sdkman.io
+- Pacotes - apt, homebrew, Windows Package Manager
+
+Integração Contínua - Github Actions, Jenkins, Travis
+Sonar - Avaliação estática de um conjunto de regras de verificação
+
+Container
+- Isolamento de Serviços
+- Empacotamento da aplicação
+Docker utilizado para Node.js
+Servidores de aplicação para Java
+
+Play with Docker
+https://www.docker.com/101-tutorial
+
+
+
+
+
+
+
+
+
+
+
