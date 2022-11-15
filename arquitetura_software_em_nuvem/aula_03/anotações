@@ -1,0 +1,101 @@
+Professor - Tiago Coelho Ferreto
+
+Histórico
+
+Mainframes - Anos 60 e 70
+Internet - Anos 70 e 80
+PCs - Anos 80 e 90
+Grid Computing - Anos 90 e 2000
+Virtualização - Anos 90 e 2000
+
+Principais motivadores para Computação em Nuvem
+
+-Reduzir os investimentos com Infraestrutura
+--Custo inicial fixo e alto
+--Necessidade de investimentos contínuos
+--Prejudicam o foco no core business
+
+-Evitar a subutilização de recursos
+--Datacenters com aproximadamente 20% de utilização
+
+-Necessidade de uma plataforma única
+--Garantias de fácil acesso, alta disponibilidade, escalabilidade e segurança
+
+Conceito e Características
+O que é Computação em Nuvem?
+É um modelo pay-per-use para permitir o acesso pela rede sob demanda, com disponibilidade e conveniência a 
+um conujunto compartilhado de recursos computacionais configuráveis (redes, servidores, armazenamento, aplicações e serviços)
+que podem ser rapidamente provisionados e liberados com custo de gerência e interação mínimos com o provedor de serviços.
+
+Pay-Per-Use
+Multitenant
+Self-Service
+Elasticidade
+
+Modelos de Implantação
+-Nuvem Pública
+Estrutura compartilhada
+AWS, Azure e GCP são as principais
+
+Infraestrutura de Nuvem - Data Centers
+Serviços de Nuvem
+Principais:
+-Computação
+--Máquina virtual
+--Container
+--Função como serviço
+-Armazenamento
+--Baseado em objetos
+--Baseado em blocos
+--Sistema de arquivos distribuídos
+--Banco de Dados
+-Comunicação
+--Rede virtual Privada
+--Load balancer
+--CDN - Content Delivery Network
+-Segurança
+--Controle de acesso
+
+Serviços avançados de Nuvem
+
+Big Data Analytics
+Permite a criação de um cluster para processamento de dados de Big Data
+Utilização de plataformas tradicionais - Hadoop e Spark
+
+Edge Computing
+Método de otimização de sistemas de computação em nuvem, executando o processamento de dados na borda da rede, próximo à
+fonte dos dasdos.
+
+Custos da Nuvem - As plataformas oferecem calculadoras para simular esse valor conforme o produto selecionado.
+
+Análise de Custos
+Os preços com nuvem depende de vários fatores:
+- Especificaçao e número de servidores a serem provisionados
+- Volume de dados para armazenamento e transferência
+- Sistema operacional utilizado pelas instancias provisionadas
+- Pagamento por minuto, hora ou mensal
+- Opções de pay-as-you-go, instancias reservadas ou contrato de longo prazo
+- Localização do data center de nuvem escolhido
+
+Cloudorado
+- Ferramenta de comparação de provedores de nuvem
+
+Certificações de Computação em Nuvem
+
+-Nuvem Privada
+Ex.: Microsoft Azure Stack
+Extensáo do Microsoft Azure qie permite que as organizações forneçam aplicativos, funções e máquinas virtuais da
+nuvem por meio de seus próprios data centers locais.
+
+Cloud Native Computing
+Cloud Native é uma abordagem para criar e executar aplicativos que exploram totalmente as vantagens do modelo de computação
+em nuvem
+Principais Drivers: Microserviços, Containers, DevSecops e CICD
+https://12factor.net
+
+Cloud Foundry
+É a plataforma como serviço (Paas) de código aberto, permitindo que o usuário escolha a nuvem, framework de desenvolvimento
+e serviços que desejar
+
+
+

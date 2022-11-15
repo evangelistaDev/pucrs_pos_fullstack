@@ -1,0 +1,58 @@
+Professor - Manoel Veras
+
+Aspectos essenciais da Arquitetura de Nuvem
+
+- Otimização de Custos
+Uso integral dos recursos, resultado ao menor ponto de preço possível e atende a seus requisitos funcionais
+Princípios:
+Implementar o gerenciamento financeiro;
+Adotar um modelo de consumidor;
+Medir a eficiência geral;
+Parar de gastar dinheiro com tarefas pesadas genéricas;
+Analisar e atribuir gastos;
+
+- Excelência operacional
+Apoio a seus objetivos empresariais e capacidade de executar cargas de trabalho com eficácia
+Princípios:
+Executar operações como código
+Fazer alterações frequentes, pequenas e reversíveis
+Refinar procedimentos de operações com frequência
+Antecipar falhas
+Aprender com todas as falhas operacionais e catalogá-las
+
+- Eficiência de Performance
+Uso eficiente de recursos de computação para atender a requisitos e manter a eficiência
+Princípios:
+Democratize tecnologias avançadas
+Tenha alcance global em poucos minutos
+Use arquiteturas sem servidor
+Experimente com mais frequência
+Leve as particularidades em consideração
+
+- Confiabilidade
+Princípios:
+Recuperar de falhas automaticamente
+Testar os procedimentos de recuperação
+Escalar horizontalmente para aumentar a disponibilidade agregada da carga de trabalho
+Parar de adivinhar a capacidade
+Gerenciar alterações na automação
+
+Tabela de disponibilidade
+99% - 3 dias e 15 horas de indisponibilidade máxima (por ano)
+99,9% - 8 horas e 45 minutos
+99,95% - 4 horas de 22 minutos
+99,99% - 52 minutos
+99,999% - 5 minutos
+
+SLA - Service Level Agreement - Acordo de nível de serviço, consiste em um contrato entre duas partes:
+Entre a entidade que pretende fornecer o serviço e o cliente que deseja se beneficiar deste
+
+- Segurança
+Princípios:
+Implementar uma base sólida de identidade
+Habilitar a capacidade de monitoramento
+Aplicar segurança em todas as camadas
+Automatizar as melhores práticas de segurança
+Proteger dados em trânsito e em repouso
+Manter as pessoas afastadas dos dados
+Preparar para eventos de segurança

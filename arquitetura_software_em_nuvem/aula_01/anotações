@@ -1,0 +1,116 @@
+Professor - Manoel Veras
+
+DataCenter e Computação em Nuvem
+
+Datacenter
+Espaço dedicado ou um prédio que abriga equipamentos de TI e servidores de uma organização. A empresa pode orientar
+os recursos nesse datacenter para operar seus negócios ou ceder esses recursos para o público como um serviço.
+
+Arquitetura HyperScale
+Na computação, a hiperescala é a capacidade de uma arquitetura de escalar adequadamente à medida que o aumento
+da demanda é adicionado ao sistema. Datacenters Hyperscale são instalações gigantescas críticas para os negócios,
+projetadas para dar suporte a aplicações robustas e escaláveis com eficiência.
+
+Maiores empresas: Amazon, Microsoft e Google
+
+Vídeo - Sines 4.0 - Datacenter em Portugal
+
+Computação em Nuvem
+É a entrega sob demanda de um poder computacional, armazenamento de dados, aplicativos e outros recursos de TI
+por uma plataforma de serviços nuvem usando a internet com o modelo de definição de preço pay as you go
+(Pague conforme o uso).
+
+Vantagem da nuvem é que pode pensar em serviços que são distribuídos para vários clientes e você 
+otimiza o uso do recurso.
+
+Vantagens da Computação em Nuvem
+- Trocar despesas de capital por despesas variáveis.
+- Economia de escala.
+- Parar de especular sobre capacidade.
+- Aumento da velocidade e agilidade.
+- Chega de gastar dinheiro para executar e operar Datacenters.
+- Torna-se golbal em minutos
+
+- Arquitetura de Negócio
+- Arquitetura de Sistemas
+- Arquitetura de Dados
+-- Arquitetura de Nuvem
+-- Arquitetura de Datacenter
+
+Arquitetura de software
+Componentes de software, suas propriedades externas e relações com outros softwares
+
+Arquitetura em Nuvem
+Multi-inquilino - Software como Serviço (SaaS)
+A arquitetura força com que as aplicações tenham um nível de isolamento, segmentação, políticas e níveis de serviço diferentes
+por perfil de usuários. Utiliza uma abordagem de design que permite a economia em escala, disponibilidade, segurança,
+isolamento e eficiência operacional através do compartilhamento de infraestrutura, dos dados e serviços através de diferentes
+clientes
+
+Containers
+Modelo de virtualização com o objetivo de implantar e executar aplicativos distribuídos.
+Container contém tudo que é necessário para a execução da aplicação, com arquivos, variáveis de ambiente e bibliotecas
+próprias. Permitem, assim, a criação de soluções escaláveis, com os benefícios da computação em nuvem.
+
+Vídeo - Containers vs VMs quando e onde devo usar? (Caio Delgado)
+
+Definição de Arquitetura em Nuvem
+- Requisitos de Negócio
+A arquitetura empresarial é implementada por meio de um conjuto de etapas
+Frameworks: Zachman, TOGAF, FEA, Gartner
+- Arquitetura de Referência
+Um conjunto de boas práticas que deve ser observado por todos os membros de uma organização
+Não representa a arquitetura da nuvem
+
+Arquitetura de Referência de Nuvem
+Foca em responder "o que é?" e não "como fazer ?"
+Objetiva ilustrar e entender os vários serviços de nuvem dentro de um contexto do modelo conceitual
+da computação em nuvem.
+
+NIST
+Arquitetura usada como padrão em praticamente todo o mundo, o NIST define 5 atores:
+cloud consumer, cloud provider, cloud carrier, cloud auditor e cloud broker.
+Cada ator é uma entidade que participa em uma transação ou processo ou realiza uma tarefa no contexto da computação em nuvem.
+
+Consumidores: Os principais stakeholders dos serviços de computação em nuvem.
+Provedores: A entidade responsável por manter os serviços da nuvem disponíveis para as partes interessadas.
+- Public Cloud
+- Private Cloud
+- Hybrid cloud
+
+Escopo de Controle
+SaaS - Software as a Service
+Modelo de compercialização em que os fornecedores de software são responsáveis por toda a estrutura de disponibilização
+do sistema. O cliente por sua vez, utiliza o software via internet, pagando um valor pelo serviço.
+PaaS - Plataforma como serviço, consiste no serviço de hospedagem e implementação de hardware e software usado para
+prover aplicações. Possibilida substituir o paradigma de aplicações tradicionais, sendo uma das principais formas
+de contratar a computação em nuvem.
+IaaS - Infraestrutura como serviço, permite que empresas utilizem recursos de garware, como capacidade de processamento e 
+áreas de armazenamento, como um serviço de rede. Assim, são dispensados recursos físicos necessários locais, utilizando-se
+, de forma virtual, serviços usualmente providos por alguma empresa de internet
+
+Cloud Broker: Intermediação de serviços, agregação de serviços e arbitragem de serviços
+Cloud Audit: Responde pela auditoria da nuvem em três focos - Securança, Privacidade e Desempenho
+Clour Carrier: Fornece os meios para o consumidor acessar o provedor de nuvem.
+
+Requisitos Técnicos
+O uso de padrões em arquitetura de nuvem acarreta uma série de benefícios
+
+Elementos Essenciais
+- Nome
+- Requisitos
+- Problema
+- Solução
+- Aplicação
+- Mecanismos
+- Arquitetura de Refeência NIST
+
+CloudPatterns.org
+
+
+
+
+
+
+
+
