@@ -1,0 +1,242 @@
+Professor - Luana Muller
+
+Caracterização de Interface de Usuário (UI)
+
+O que é Interface?
+A interface de um sistema interativo compreende toda a portção do sistema com a qual o usuário mantém contato físico
+(motor ou perceptivo) ou conceitual durante a interação.
+
+É o meio de acesso às funcionalidades do sistema.
+
+O que é Interação?
+Processo através do qual o usuário formula uma intenção, planeja ações, atua sobre a interface, percebe e interpreta
+a resposta e avalia se o objetivo foi alcançado.
+
+Estilos de Interação
+
+-Linguagem de Comando
+-WIMP ou GUI (Windows, Icons, Menus, Pointing Devices) / (Graphical User Interface)
+-Linguagem natural
+-Menus
+-Formulários
+-Manipulação direta
+-Natural - Fala, toque, gestos e imersivas
+-Multimodal
+-Wearable
+-Eletrônicos de consumo e eletrodomésticos
+-Robótica
+-Cerebral
+
+Design Visual e Arquitetura de Informações
+
+Design de UI
+É importante e necessário, pois ele ajuda a reduzir os aspectos negativos da experiência do usuário, ajudando a desenvolvedores
+produtos interativos fáceis, eficientes e agradáveis, e a para projetar interfaces tendo o usuário em mente e não a funcão.
+
+-Análise da situação atual: estudá-la e compreende-la
+-Sintetizar a intervenção: planejar e executar uma intervenção na situação atual
+-Avaliar a nova situação: verificar o efeito da intervenção, comparando-a com a anterior
+
+Design de UI x Design de UX
+
+-Interface x Experiência
+-Necessidade do Front-End x Necessidade do Produto
+
+Princípios e Diretrizes para o Design de UI
+- Determinar quais ações são possíveis a cada momento, fazendo uso de restrições
+- Tornar as coisas visíveis incluindo o modelo conceitual do sistema, as ações alternativas e os resultados das ações
+- Avaliar o estado corrente do sistema e seguir mapeamentos naturais entre as intenções e as ações requeridas, entre ações efeito
+resultante, e entre a informação que está visível e a interpretação do estado do sistema.
+
+Correspondência com as Expectativas dos Usuários
+- Intenções e açõe possíveis
+- Ações e seus efeitos
+- Forneça fechamentos
+- Apresente feedbacks
+- Use metáforas
+
+Simplicidade nas Estruturas das Tarefas
+- Em tarefas complexas, forneça forma de apoio aos usuários para que consigam aprender como realiza-las
+- Melhore o feedback e ajude o usuário a se manter no controle da tarefa
+- Automatize a tarefa (ou parte)
+- Modifique a natureza da tarefa
+
+Equilibrio entre Controle e Liberdade do Usuário
+- Equilibre limitações e restrições
+- Excesso de liberdade pode deixar o usuário perdido
+- Porém, aos poucos, forneça caminhos alternativos de interação
+- Permita ao usuário explorar a interface
+
+Consistência e Padronização
+- Padronize ações, resultados, layouts dos diálogos, visualizações de informação e comportamentos
+- Respeite os padrões e estilos definidos a nível de produto e plataforma
+
+Promovendo a Eficiência do Usuário
+- Eficiência do usuário em primeiro lugar, e não a do computador
+- Mantenha o usuário ocupado e permita que ele trabalhe enquanto processos ocorrem em background
+- Não interrompa o usuário de forma desnecessária
+- Proteja o trabalho do usuário
+- Mantenha-se informado sobre o usuário e lembre-se dele
+- Forneça atalhos
+
+Antecipação
+- Ainterface deve fornecer informações úteis e não apenas Respostas
+- Preveja o que o usuário quer e precisa
+- Use valores default
+
+Visibilidade e Reconhecimento
+- Torne visível ao usuário o que ele pode fazer e como
+- Ações devem corresponder as intenções do usuário
+- Não forneça opções que não façam sentido para o momento de interação
+- Forneça indicações sobre os estados do sistema assim como feedbacks
+- Não exija que o usuário memorize informações ou comandos
+- Em ações demoradas, mostre o progresso e permita ao usuário realizar o cancelamento
+- A interface deve permitir ao usuário localizar-se, identificar ações e obter ajuda
+
+Projeto para Erros
+- Assuma que qualquer erro potencial possa ser cometido
+- Ajude o usuário a identificar um erro, suas consequencias e como reverte-lo
+- Torne tarefas irreversíveis difíceis de serem executadas
+- Não coloque controles de ações perigosas ou raras próximo à controles de ações frequentes
+- Mensagens de erro devem usar linguagem simples, serem precisas e sugerirem soluções
+- Apoie os usuários no esclarecimento de dúvidas: sistemas de ajuda e documentação de qualidade são imprescindíveis
+
+Ofereça ajuda
+- Forneça diversos estilos de ajuda
+- Deixe ícones de ajuda à vista do usuário
+- Facilite a navegação e busca por conteúdos
+- Ofereça tutoriais passo a passo
+
+Poder de marcar a experiência
+- Beleza estética desempenha um papel importante
+- Explore imagens, animações, efeitos sonoros, fontes, espaçamentos e diagramação, cores e texturas, estilos de ícones
+- Surpreenda o usuário: simplifique a sua vida e apresente personalização inteligente
+
+Qualidade das apresentações
+- O entendimento de uma tela depende do significado, da elegibilidade e da distribuição das informações apresentadas
+- Apresente nomes de funções familiares aos usuários e códigos representativos (F-Feminino, M-Masculino)
+- Use abreviações de fácil interpretação
+- Leve em consideração tamanho de fontes, contraste entre letra e fundo, espaçamento entre linhas, comprimento de linhas
+
+Padrões de Design para UI
+
+O que é um Padrão de Design?
+Ou Design Patterns, são descrições de melhores práticas em um determinado domínio de design
+
+Um padrão descreve um problema pontual e não é uma solução pronta, nem um passo a passo sobre projeto de interfaces
+
+Estrutura de Um padrão
+- Nome do Padrão: transmite em poucas palavras a ideia de um padrão
+- O que é: resume, em um parágrafo curto, a solução
+- Quando usar: situações em que o padrão se aplica
+- Por quê: dados, que justifiquem porque o padrão se adequa a situação
+- Como: detalhes de como implementar a solução
+- Exemplos: diagramas e imagens
+
+Nuvem de Tags
+http://www.welie.com
+
+Guias de Estilo
+Comum em grandes projetos e com função de reunir os princípios e diretrizes que devem ser adotados
+Registro de decisões de design
+Comunicação entre os membros da equipe de design e desenvolvimento
+
+Escopos:
+-Plataforma
+-Corporativo
+-Família de Produtos
+
+Elementos:
+- Layout
+- Tipografia
+- Simbolismo
+- Cores
+- Visualização de informação
+- Design de telas e elementos de interfaces (widgets)
+
+Redação para UX
+O que são microtextos?
+- Redação, de origem publicitária, que consiste em poucos caracteres, poucas linhas, textos que exigem o máximo de concisão e personalidade.
+- A missão árdua do Redator de UX é o equilíbrio entre o tamanho reduzido do texto e a personalidade que ele é capaz de transmitir.
+
+Microtextos são definidos como palavras ou frases na interface que estão diretamente relacionadas às ações que o usuário realiza:
+- Motivação antes da ação
+- Instruções que acompanham a ação
+- Resposta (feedback) após a ação
+
+Finalidade da Redação para UX
+- Promover alguma ação, facilitando o engajamento do usuário na interface
+- Ajudar a transmitir segurança ao usuário
+- Conduzir o usuário aos próximos passos que a interface tem a oferecer
+- Remover ambiguidades, assegurando a clareza e transparência das informações
+- Ajudar o usuário a se acalmar quando há um erro
+
+Voz e tom da marca
+- O Redator de UX deve descobrir a voz e o tom das marcas
+- Essa voz deve refletir a origem da marca, seus princípios e valores e comunicações preexistentes
+- Quando a voz é consistente por todo o ciclo de interação, a afinidade com a marca se fortalece
+
+Quadro de voz da marca
+
+Conceitos
+Vocabulário
+Verbosidade
+Gramática
+Pontuação
+Capitalização
+
+A diferença entre colunas define a diferença entre voz e tom
+Voz: escolha consistente e reconhecível de palavras ao longo de toda a experiência
+Tom: variabilidade nessa voz de uma parte da experiência para a outra
+Uma organização deve ser reconhecida pela sua voz, mas o tom irá ditar o que é uma mensagem de erro, uma notificação ou um momento de comemoração
+
+Princípios do Produto
+Definem o que a experiência está tentando ser para seus usuários
+O papel da voz é transmitir esses princípios através de palavras
+
+Padrões de texto de UX
+
+Títulos
+Finalidade de fornecer uma explicação imediada sobre o contexto e a ação a ser tomada.
+
+Botões, links e outros comandos
+Finalidade de permitir ao usuário avançar na tarefa ou executar uma ação.
+
+Descrições
+Finalidade em ajudar a seguir adiante na experiência sabendo o que esperar, estabelecer a marca e reduzir a responsabilidade.
+
+Estados Vazios
+Finalidade de criar expectativas e entusiasmo enquanto indica o que o espaço vazio é intencional
+
+Rótulos
+Finalidade é minimizar os esforços necessários para compreensão da experiência.
+
+Controles
+Finalidade de informar aos usuários sobre a extensão e o estado de possíveis customizações (Switch, Checkbox)
+
+Campos de entrada de texto
+Finalidade de ajudar os usuários a fornecer informações precisas.
+
+Texto de transição
+Finalidade de confirmar que uma ação está em andamento (carregando / enviando)
+
+Mensagem de confirmação
+Finalidade em garantir aos usuários que o progresso ou os resultados esperados estão concluídos.
+
+Notificações
+Finalidade de informar ou lembrar o usuário de se envolver com a experiência
+Composta de título e descrição
+
+Erros
+Finalidade de ajudar os usuários a chegar aonde querem e, se necessário, indicar que há um problema para alcançarem seu objetivo
+da maneira como planejaram
+Foco em auxiliar o usuário
+Demonstrar empatia
+
+Categorias de Erros:
+Ruído: menos instrusiva, recomenda uma correção antes de seguir adiante
+Obstáculo: quando a experiência não puder ser corrigida assim que o erro ocorre, é possível perdudar uma placa virtual de "obstáculo"
+usando as mensagens de erro.
+Barreira: Nestes casos, deixe claro qao usuário que aquele é o final da estrada.
+
+
