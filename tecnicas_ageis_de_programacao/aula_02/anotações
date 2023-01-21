@@ -1,0 +1,147 @@
+Práticas
+
+Testes
+A importância dos critérios de aceite
+- Ajudam a cadenciar o trabalho
+- Ajudam a fazer somente o necessário
+- Cenários demonstram exemplos que definem os limites do nosso trabalho
+
+Automação e Integração Contínua
+- Você mantém seu código na sua máquina por quanto tempo?
+- Se seu código entrar na base de produção, vai quuebrar alguma coisa?
+- Como o seu código chega até quem vai usar e gerar valor a partir da sua entrega?
+- Como funcionam os builds da sua equipe?
+
+Pipeline
+Integração, Deploy e Entrega Contínua
+
+Escrita de histórias
+Quem queremos impactar? Que atividades queremos impactar?
+- Personas ou Jobs?
+Que valor vamos gerar?
+- Benefício e impacto. Precisa ser feito mesmo? E se não for feito?
+O que precisa ser feito?
+- Qual o progresso?
+Como sabemos se fizemos o que precisa ser feito?
+- Critérios de aceite. Como vai ser testado?
+- O tamanho da história está adequado?
+
+Histórias de Usuário?
+Situações:
+Pagar um boleto
+Comer enquanto dirige
+Pendurar um quadro
+
+Livro - Histórias Usuário - Por que e como escrever requisitos de forma ágil? wildtech.com.br
+
+5W2H - Quem, O que, Porque, Onde, Quando, Como e quanto
+
+Cenários e Testes
+- Os testes ajudam a validar o nosso progresso
+- Cenários devem representar exemplos reais de clientes
+- Use perguntas para guiar a construção
+-- Dado que? Em que estado está o sistema, para iniciarmos o trabalho? Qual a pré-condição?
+-- Quando? Qual ação está acontecendo no sistema?
+-- Então? Como ficou o sistema depois da ação realizada? O que é esperado? Qual foi a reação do sistema?
+
+Exemplos:
+Negócio:
+Dado que um produto tem estoque disponível
+Quando informo uma venda inferior ao estoque
+Então a venda é registrada E o estoque é atualizado
+
+Testes:
+Dado que o estoque do refrigerante é 50 unidades
+Quando informo uma venda de 28 unidades
+Então a venda é registrada E o estoque passa a ser de 22 unidades
+
+Narrativa (Quem? / O que? / Por que?)
+Sendo um <persona>
+Posso <funcionalidade>
+Pois assim <beneficio>
+
+Critérios de Aceitação (Como?)
+Dado que <pré condição>
+Quando <ação>
+Então <reação>
+
+O Ritmo do TDD
+Red -> Green -> Refactor > ...... Red
+
+Sua equipe diferencia deploy de um release?
+Como validar funcionalidades sem impactar todos clientes?
+- Estratégias de liberação: clientes beta, tipos de clientes?
+- Feature Toggles
+Só para lembrar... desde quando podemos validar?
+- Importância dos protótipos
+
+Dívida Técnica
+Tipos de Dívida Técnica
+Refactoring
+- O grande motivador para a realização da fefatoração é a questão da qualidade, a melhoria do design
+Código Legado
+- Dilema Refacotring X Testes
+- Considerar o "tempo de latência"
+- Gerenciando dependências
+ - pontos de intercepção
+ - pontos de fixação
+- Use notas/diagramas
+- Identifique responsabilidades
+- Refatoração Transitória
+
+Análise de Código
+Por que analisar código é importante?
+- Ampliar nossa capacidade cognitiva de programação
+- Conhecer outros paradigmas, padrões e linguagens
+- Ampliar nossas habilidades
+
+Quais habilidades precisamos desenvolver?
+- Conhecer heurísticas de análise para as estuturas
+ - Módulos/Pacotes, Classes, Métodos
+- Compreender aspectos de qualidade de software
+ - Atributos externos e internos
+- Aplicar métricas de análise, estratégias de visualização e ferramentas de apoio
+ - Compreensão de software, mineração de repositórios
+- Estratégias
+ - Análise Estática, Análise Dinâmica, Análise Temporal, Análise Comportamental
+
+ Tipos
+ - Estática - Quando estamos trabalhando no código fonte ou no binário
+ - Dinâmica - Durante a execução
+ - Histórica - Repositório
+ - Comportamental - Junta os outros tipos de análise + o aspecto dos times
+
+Ferramentas
+Better Code Hube, DR-Tools, PMD, CodeScene, SourceLevel, SciTools Understand, CodeMR, ArchUnit, Sokrates, sonarQube, JUnit
+
+Pilares da Análise de Código
+- Coesão
+- Acomplamento
+- Ttamanho
+- Complexidade
+
+Legibilidade e Compreensão
+- Estruturas pequenas
+- Nomes significativos
+- Formatação e uso de padrões
+- Organização das estruturas e algoritmos
+- Aplicação dos princípios do paradigma
+- Testes automatizados
+
+Melhor momento para fazer análises
+- Individualmente apoiado por ferramentas
+- Em par para discutir situações específicas
+- Sessões de code review
+
+DR-Tools - drtools.site
+
+Dicas
+- Regra dos 30 segundos
+- Regra do Escoteiro/refatoração oportunista
+- Metáfora do jornal
+- Olhe o código dos outros
+- Conheça suas ferramentas
+- Use automação em diferentes níveis
+- Defina políticas de qualdade (Quality Gates)
+
+Liderança Técnica

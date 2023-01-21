@@ -1,0 +1,168 @@
+Professor - Michael da Costa Móra
+
+Extreme Programming - XP
+
+- Metodologia ágil, leve
+- Desenvolvida para:
+ - Equipes pequenas e médias (2 a 12 pessoas)
+ - Requisitos vagos e em constante evolução
+- Baseada nos seguintes valores:
+ - Simplicidade
+ - Comunicação
+ - Coragem
+ - Feedback
+
+ Boas Práticas
+ - Planning Game -> Objetivo: definir escopo das releases | Resultado: Conjunto de User Stories
+ - Small Releases -> Versões frequentes e pequenas, maior ganho e minimiza riscos
+ - Metaphor -> Uso de histórias simples e compartilhadas durante o desenvolvimento
+ - Simple Design -> Projetar de forma simples sem redundância, duplicação
+ - Test First Design -> Testes -> Implementação -> Design
+ - Refactoring -> Melhorar o código sem alterar a funcionalidade
+ - Stand-up Meeting -> Reuniões rápidas e diárias com a equipe
+ - Continuous Integration -> Integrar o sistema várias vezes ao dia, a cada tarefa finalizada
+ - Pair Programming -> Implementação com dois programadores em uma máquina
+ - Move People Around -> Revezar as duplas de programação
+ - Collective Code Ownership -> A equipe responsável por cada arquivo de código
+ - Coding Standards -> Existe um padrão para codificação
+ - 40-Hour Week -> Não trabalhar mais de 40 horas semanais
+ - On-Site Customer -> Ter um papel de cliente na equipe XP em tempo integral para responder as perguntas
+ - Acceptance Tests -> Critérios de aceitação do software definidos pelo usuário
+
+Papéis no XP
+Big Boss / XP Manager
+Deve:
+- Agendar Reuniões
+- Escrever atas
+- Manter o XP Tracker informado dos acontecimentos das Reuniões
+Não deve:
+- Deixar problemas externos interferirem no desenvolvimento
+- Dizer quando asd coisas devem acontecer
+- Dizer às pessoas o que fazer
+- Cobrar as pessoas
+
+Cliente
+Xp Gold Owner
+Quem paga pelo sistema, dono da empresa
+Xp Goal Donor 
+Cliente que conhece o produto
+Deve:
+- Escrever User Stories
+- Definir prioridades
+- Definir testes de aceitação
+- Validar testes de aceitação
+- Esclarecer dúvidas
+Não deve:
+- Implementar código
+- Definir quanto tempo uma tarefa leva para ser feita
+
+Coordenador
+Xp Coach
+Responsável pela negociação com o cliente quanto ao escopo e pela coordenação do Planning Game
+Xp Tracker
+Coletor de métricas, informações sobre o planejamento, toma atitudes diante dos problemas
+
+Programadores
+Driver/Partner
+Deve:
+- Estimar prazos de User Stories
+- Implementar código de produção
+- Trabalhar em par
+- Fazer Refactoring
+- Corrigir bugs
+Não deve:
+- Criar/Alterar novas funcionalidades
+- Escrever testes de aceitação
+
+Executando o XP
+- Planejar Iteração
+ - Detalhar Histórias
+ - Descrever prioridades
+ - Estimar Tarefas
+  - Estimar por Comparação
+  - Estimar por Intuição
+  - Spike Solutions
+- Distribuir Histórias
+- Programar
+ - Fazer Teste unitário
+ - Implementar
+- Stand-up meetings
+- Executar Testes de Aceitação
+- Disponibilizar Iteração
+
+
+Testes Unitários
+
+Teste Unitário - Componentes individuais
+Teste de Integração - Grupo de Componentes
+Teste de SIstema - Sistema como um todo
+Teste de Aceitação - Sistema como um todo Requisitos do usuário
+
+Artefatos gerados pelo teste unitário
+- Classes (drivers)
+ - São classes que contêm os casos de teste
+ - Procuram exercitar os métodos da classe buscando detectar falhas
+ - Normalmente: uma classe driver para cada classe dos sistema
+- Dublês (mockups)
+ - Simulam o comportamento de classes necessárias ao funcionamento da classe e que ainda não foram desenvolvidas
+
+ XUNIT
+ Recomendações
+ - Projete casos de teste independentes uns dos outros;
+ - Não teste apenas o "positivo";
+ - Crie um driver para cada classe;
+ - Inclua o nome do método em cada teste. Final com Test
+ - Depure os testes quando for o caso. Também fazem parte do código
+
+Limites
+Um teste não é um teste unitário se:
+- Convera com o banco de dados
+- Comunica-se através da rede
+- Não pode ser executado ao mesmo tempo que os demais testes unitários
+- Necessita de ajustes na configuração do ambiente
+
+Anotações
+@BeforeEach - indica que o método deve ser executado antes de cada teste
+@AfterEach - indica que o método deve ser executado depois de cada teste
+@Test - indica que é um método de teste
+@BeforeAll - executa no início da bateria de testes (Fixture)
+@AfterAll - executa quando encerra a bateria de testes
+
+Asserções
+assertEquals
+assertFalse
+assertTrue
+assertNull
+assertNotNull
+assertSame
+assertNotSame
+assertThrows
+assertTimeout
+fail(msg)
+
+Refatoração
+Uma modificação [pequenas] no sistema que não altera o seu comportamento funcional, mas que melhora alguma qualidade não-funcional
+- simplicidade
+- flexibilidade
+- clareza
+- desempenho
+
+Exemplos de Refatoração
+- Mudança do nome de variáveis
+- Mudanças nas interfaces dos objetos
+- Pequenas mudanças arquiteturais
+- Encapsular código repetido em um novo método
+- Generalização de métodos
+
+Primeiro passo em qualquer Refatoração
+- Antes de começar a refatoração, verifique se você tem um conjunto sólido de testes para verificar a funcionalidade do código a ser refatorado
+- Refatorações podem adicionar erros
+- Os testes vão ajuda-lo a detectar erros se eles forem criados
+
+Formato de cada entrada no catálogo
+- nome
+- resumo
+- motivação
+- mecânica
+- exemplos
+

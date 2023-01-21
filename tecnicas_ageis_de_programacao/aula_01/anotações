@@ -1,0 +1,144 @@
+Professor - Daniel Wildt e Guilherme Lacerda
+Aula 01
+
+Manifesto Ágil
+Princípios e o dia a dia da equipe
+- Satisfazer o cliente, entregando o software em tempo hábil e continuamente
+- Aceitar as mudanças de requisitos, em qualquer fase do projeto
+- Entregar sofware na menor escala de tempo possível
+- Equipe de desenvolvimento e cliente são do mesmo transmite
+- Construir projetos com indivíduos motivados e comprometidos com o resultado
+- Usar a comunicação efetiva
+- Ter o software em funcionamento é a principal medida de progresso
+- Atenção contínua à excelência técnica
+- As melhores arquiteturas, requisitos e projetos provêm de equipes organizadas
+- Refletir sobre como se tornar mais eficaz, ajustando e adaptando o comportamento da equipe
+Simplicidade - a arte de maximizar a quantidade de trabalho não realizado - é essencial
+
+Problemas - Falta de comunicação
+
+Desenvolvimento Ágil - Ciclos de entrega
+
+A agilidade expõe os problemas mais rapidamente
+
+eXtreme Programming
+
+3C
+-Cartões - informação limitada, opera como um lembrete
+-Conversação - quem nos ajuda a amplificar o conhecimento e desenvolver exemplos sobre o que estamos aprendendo
+-Confirmação - conforme conversamos com clientes, conseguimos comprovar os atendimentos, através de validação com o mundo real
+A importância das entregas frequentes
+
+Spikes
+-Aprender antes, para depois poder descobrir e habilitar a entrega
+-Tempo de investigação
+-Preparação para o fazer
+-Remoção de risco técnico
+-Modo descoberta e modo entrega (Discovery e Delivery)
+
+Ritmo Sustentavel
+-Como funciona a sua vida?
+-Qual tempo existe para você?
+-Quando você aprende?
+-Quando você não faz nada?
+-Ritmo sustentável trata de tempo de presença, tempo de foco.
+-Horas extras? Eventualmente vai acontecer. Você vai assumir por entender suas responsabilidades.
+
+Formação de Times
+-Multidisciplina
+-Carreira T, Pi, W?
+-Como a equipe aprende?
+-O que você faz quando não se sabe o que fazer?
+-O que você faz quando não se tem o que fazer?
+
+Lean Enterprise
+
+Comando e Controle
+
+Metáforas
+
+O trabalho da pessoa desenvolvedora
+Principais Atividades:
+- Design/Programação/Testes/Manutenção/Evolução
+- Gestão de configuração e do trabalho
+- Colaborar com outros profissionais
+Desafios:
+- Dominar tecnologias
+- Manter-se atualizado
+- Ter a visão do todo
+- Ser especialista/generalista
+- Interagir com clientes/usuários
+- Preocupar-se constantemente com a qualidade
+- Se adaptar
+
+Padrões/Convenções
+Toda linguagem tem:
+- E por que não usamos?
+- Quais são os benefícios?
+- Prática do XP
+Componentes:
+- Nomenclatura
+- Estrutura do código
+- Terminologia
+- Formatação
+- Boas práticas
+- Exemplos
+
+Pair Programming e Mob Programming
+Pair Programming
+- Mecânica
+- Ferramentas
+Mob Programming
+- Mecânica
+
+Modern Code Review
+
+Smells
+Smell pode ser um sintoma, um indicativo de um potencial problema de design; um bug não, um bug se revela quando executamos o software.
+Refatorações
+
+Engenharia de software
+Se não definirmos a forma como o time irá operar junto, como serão esses acordos de trabalho, iremos perder produtividade.
+
+Complexidade
+Essencial x Acidental
+Essencial - Faz parte do negócio
+Acidental - O desenvolvedor insere, desde ferramentas, frameworks etc...
+
+Leis de Lehman
+Mudança contínua - Um programa usado em um ambiente do mundo real deve necessariamente mudar, ou se torna progressivamente menos útil nesse ambiente
+Aumento da complexidade - Como um programa em evolução muda, sua estrtura tende a tornar-se mais complexa. Recursos extras devem ser dedicados a preservar e simplificar a Estrutura
+Evolução de programa de grande porte - A evolução de programa é um processo de autorregulamentação.
+Estabilidade organizacional - Ao longo da vida de um programa, sua taxa de desenvolvimento é aproximadamente constante e independente dos recursos destinados ao desenvolvimento do sistema
+Conservação da familiaridade - Durante a vigencia de um sistema, a mudança incremental em cada release é aproximadamente constante
+Crescimento contínuo - A funcionalidade oferecida pelos sistema tem de aumentar continuamente para manter a satisfação do usuário
+Declínio de qualidade - A qualidade dos sistemas cairá, a menos que eles sejam modificados para refletir mudanças em seu ambiente operacional
+Sistema de feedback - Os processos de evolução incorparam sistemas de feedback multiagentes, multiloop e você deve tratá-los como sistemas de feedback para alcançar significativa melhora do produto
+
+Manutenção
+Desenvolvimento + Manutenção = Evolução
+
+Problemas na Documentação
+Taxonomia
+- Construída a partir de mais de 800 documentos, incluindo PRs do Github e threads do StackOverflow
+- Problemas: Incompletude, falta de atualização, pouca usabilidade, pouca legibilidade
+Principais Dores
+- Documentações que ferem os critérios de completude, atualidade e legibilidade
+- Falta de Corretude: documentações com informações erradas
+
+Documentação Técnica
+Estrutura
+- Conteúdo, tamanho, audiência, Formatação
+- Contar uma história
+- Use e abuse de exemplos de código
+Elementos e exemplos
+- Diagramas (Maps, UML, etc..)
+- Arquitetura (C4 Model, Architeture Haiku, Architeture Decision Records (ADR))
+- Mockups, protótipos navegáveis
+- Engenharia Reversa: Artefatos, Visualização de software
+- Código: Programação Literata, comentários e documentações no código
+- Testes: Documentação automatizada
+- Guias: Deployment, contibuição, instalação/uso, primeiros passos
+
+
+
