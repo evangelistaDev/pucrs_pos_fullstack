@@ -1,0 +1,165 @@
+Professor - Miguel Xavier
+
+Introdução
+
+A forma mais comum utulizada para criar esses serviços é através do desenvolvimento de aplicações web, o qual o usuário
+ é capaz de interagir através de entrada de dados e esperam receber uma saída de dados ou um feedback dessa aplicação.
+Até o presente momento, essas aplicações foram desenvolvidas utilizando tecnologias como REST e SOAP`. O problema de utilizar essas
+tecnologias é que às vezes exige um nível de abstração baixo e sem o controle na resposta das requisições. Enquanto o GraphQL a aplicação
+ pega somente o que é necessário para ela. Isso reduz a carga de dados enviados do servidor para o navegador.
+
+Fundamentos
+
+Definição
+Um Web Service é um serviço, ou seja, um componente de software independente e fracamente acoplado que engloba funcionalidade
+ discreta que pode ser distribuída e acessada por meio de uma aplicação, através de protocolos padrão.
+
+Características
+- Objetos Remotos
+- Residem em um servidor web e têm um endereço URL
+- Trabalham sobre o modelo de requisição/resposta
+- Utilizam protocolos que facilitam a comunicação entre sistemas
+ - Independente do sistema operacional e da linguagem de programação (web services interoperáveis)
+ - São objetos para soluções fracamente acopladas
+
+ Arquiteturas Web
+
+Protocolo HTTP
+Comunicar-se com servidores e aplicativos web se dá através do protocolo Hypertext Transfer Protocol
+- Protocolo de nível de aplicação
+- Protocolo textual
+- Protocolo baseado em mensagem de requisição/resposta no modelo cliente/servidor
+- Protocolo sem manutenção de estado
+- Versões (em uso): 
+ - 1.1 (RFCs 7230, 7231, 7232, 7233, 7234, 7235)
+ - 2 (RFC 7540)
+
+ Um URL Uniform Resource Locator é utilizado para identificar elementos em um servidor web
+
+ Uma requisição HTTP consiste de:
+ - Uma linha inicial
+ - Um ou mais campos de cabeçalho
+ - Uma linhha em branco
+ - Possívelmente um corpo da mensagem
+
+ Uma resposta HTTP consiste de:
+ - Uma linha de status com seu código e mensagem associada
+ - Um ou mais campos de cabeçalho
+ - Uma linha em branco
+ - Possívelmente um corpo da mensagem
+
+Alguns métodos (também chamados de verbos)
+
+GET - Solicita um recurso ao servidor
+POST - Fornece a entrada para um comando do lado do servidor e devolve o resultado
+PUT - Envia um recurso ao servidor
+DELETE - Exclui um recurso do servidor
+TRACE - Rastreia a comunicação com o servidor
+
+GET
+- Método mais simples
+- Quantidade de dados muito limitada
+ - Limite implementado nos navegadores
+- Dados acrescentados à URL após um caractere "?", no formato "campo=valor", separados pelo caractere "&"
+ - Recebe o nome de query-string
+
+POST
+- Método mais robusto
+- Quantidade de dados não é limitada como no GET
+- Dados (query-string) enviados no corpo da requisição do protocolo
+- Permite efeitos colaterais na execução no lado do servidor
+
+Web services
+
+SOAP + XML
+Arquitetura Básica
+- Web Services (tipo SOAP+XML) provêm meios de objetos interagirem utilizando a Internet como meio de transmissão
+- Baseado em diversos padrões:
+- Extensible Markut Language (XML)
+- SOAP
+- Web Services Description Language (WSDL)
+- Hypertext Transfer Protocol (HTTP)
+
+Publicação e Descoberta: WSDL
+Troca de Mensagens: SOAP
+Formato Padrão de Dados: XML
+Comunicação Universal: Internet
+
+Comunicação
+- Protocolo HTTP para envio e recebimento de dados
+ - GET dados enviados via query string na URL
+ - POST dados enviados no corpo da mensagem
+ - Sem manutenção de estado
+ - Recursos identificados por URL ("Uniform Resource Locator")
+Dados
+- Informações serializadas em XML
+Troca de Mensagens
+- Mensagens para objetos remotos via protocolo SOAP
+- Envelope SOAP encapsulam dados XML
+ - Nome do métodos
+ - Parâmetros do métodos
+ - Valores de retorno
+Descrição
+- Arquivo WSDL descreve as mensagens e tipos de retorno do web services
+- É um documento XML
+
+REST + JSON
+- Representational State Transfer é um estilo arquitetural
+- Web services baseados em REST são usualmente chamados de RESTfull
+Características:
+- Serviço sem estado
+- Baseados no protocolo HTTP/HTTPS
+- Dados e funcionalidades são considerados recursos acessados via URIs 
+- Infraestrutura mais leve que SOAP+XML
+Arquitetura baseada em quatro princípios:
+- Identificação dos recursos através de URIs - Uniform Resource Identifiers
+- Interface uniforme de acesso aos recursos
+ - Operações de criação, leitura, alteração e remoção
+ - Implementadas via HTTP
+- Mensagens autodescritivas
+- Iteração com manutenção de estado através de hyperlinks
+Questões para o desenvolvedor:
+- Definir quais são os recursos expostos
+- Definir o formato das URIs para os recursos
+- Decidir quais verbos do HTTP serão realmente utilizados
+- Estabelecer a real semântica da aplicação de cada verbo sobre um recurso
+
+JSON = JavaScript Object Notation
+Formato textual para seralização de dados
+Tipos primitivos
+ - Strings, números, booleanos, null
+Tipos estruturados
+ - Objetos
+  - Coleção não ordenada de zero ou mais pares chave/valor
+ - Arranjos
+  - Coleção ordenada de zero ou mais valores
+
+GraphQL
+- O GraphQL começa com a construção de um esquema, que é uma descrição de todas as consultas que você pode fazer em uma
+API do GraphQL e todos os tipos que eles retornam.
+- O cliente pode validar sua consulta para garantir que o servidor possa responder a ela.
+- Uma operação do GraphQL é interpretada em todo o esquema e resolvida com dados para o aplicativo front-end. Enviando
+uma consulta massiva ao servidor, a API retorna uma resposta JSON com exatamente a forma dos dados que solicitamos.
+
+Casos de uso do GraphQL
+- API mobile
+- Sistemas complexos e microserviços
+
+Tecnologias de Suporte
+- Descrição e descoberta de serviços:
+ - WADL (Web Application Description Language)
+  - Especificação de linguagem para descrição de serviços REST
+- RAML (RESTful API Modeling Language)
+ - Especificação de linguagem para descrição de serviços REST
+- Swagger
+ - Especificação de linguagem para descrição de serviços REST
+- OpenAPI
+
+
+
+
+
+
+
+
+

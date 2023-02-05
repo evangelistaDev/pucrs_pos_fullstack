@@ -1,0 +1,127 @@
+Professor - Cassio Trindade
+Aula 01
+
+História e Conceitos
+
+Grandes empresas que surgem trazem novas tecnologias
+Arpanet - Advanced Research Projects Agency Network / Rede da Agência para Projetos de Pesquisa Avançada
+1969 - Dados militares sigilosos e interligação dos departamentos de pesquisa.
+
+TCP - Transmission Control Protocol / Protocolo de Controle de Transmissão
+IP - Internet Protocol / Protocolo de Internet
+FTP - File Transfer Protocol / Protocolo de Transferência de Arquivos
+
+Tecnologias de rede de computadores
+
+LAN (Local Area Network)
+Uma rede local, geralmente está localizada em um edifício, escritório, campus ou até mesmo em sua residência. Possui alta velocidade,
+conectividade é uma rede de acesso privativo ou seja limitada a uma área geográfica
+
+MAN (Metropolitan Area Network)
+Rede Área Metropolitana, é um escopo de rede intermediário entre uma LAN e um WAN. Trata-se de uma rede localizada em uma área geográfica
+confinada e bem definida, de tamanho médio, como por exemplo em um município ou região metropolitana.
+
+WAN (Wide Area Network)
+Em uma WAN a comunicação se dá em uma distância relativamente longa. Geralmente podemos usar uma WAN para conectar uma LAN de um local a 
+outra LAN em um local remoto, que pode estar localizada em um prédio vizinho ou do outro lado do planeta.
+
+Internet
+-Sistema global de redes de computadores interligadas
+-Utiliza TCP/IP com o propósito de servir os usuários no mundo inteiro
+-Rede de várias outras redes
+-Milhoes de empresas: privadas, públicas, acadêmicas e governos
+-Alcance local e global
+-Ligada por uma ampla variedade de tecnologias
+
+WWW - World Wide Web
+Um sistema de documentos em hipermídia que estão interligados e/ou executadas na Internet
+Textos, vídeos, sons, hipertextos e imagens, etc...
+
+HTTP - Hypertext Transfer Protocol / Protocolo de Transferência de hipertextos
+Protocolo de comunicação utilizado para sistemas de informação de hipermídia distribuídos e colaborativos. É a base para comunicação de dados
+da World Wide Web
+O S em HTTPS, refere-se a camada adicional de segurança, onde permite que os dados sejam transmitidos por meio de uma conexão criptografada
+
+Arquitetura Monolítica
+- Mais simples de desenvolver: a organização fica concentrada em um único sistema
+- Simples de testar: é possível testar a aplicação de ponta a ponta em único lugar
+- Simples de fazer o deploy para o servidor: a alteração é simplesmente feita e pronto
+- Simples de escalar: como é só uma aplicação, se for preciso adicionar mais itens, é simplesmente ir adicionando o que for necessário
+
+Arquitetura Serviços
+- Reutilização: Os serviços podem ser reutilizados por várias aplicações da empresa ou outras empresas
+- Produtividade: O reuso de serviços aumenta a produtividade da equipe de desenvolvimento, quando fazem uso de serviços já existentes em outros projetos
+- Flexibilidade: Isolando a estrutura de um serviço as mudanças são feitas com maior facilidade
+- Manutenção: Com baixo acoplamento (desconhecimento dos outros serviços), facilita a manutenção dos serviços
+- Alinhamento com o negócio: Os serviços tende a representar requisitos macros das áreas de negócio
+- Governança: Gerenciamento nos processamentos de negócio por meio dos serviços
+- Interoperabilidade: Serviços independentemente da plataforma e tecnologia, podem ser feitos em qualquer uma
+- Integração: A integração com outros serviços, aplicativos e sistemas legados.
+- Padronização: É baseado no uso de padrões
+- Abstração: Serviço totalmente abstraído da sua Implementação
+
+
+API
+São um conjunto de padrões que fazem parte de uma interface e que permitem a criação de plataformas de maneira mais simples e 
+prática para desenvolvedores. A partir de APIs é possível criar softwares, aplicativos, programas e plataformas diversas.
+
+Web Service
+- São componentes de aplicativos;
+- Se comunicam usando protocolos abertos
+- São autocontidos e autodescritivos
+- Podem ser descobertos usando UDDI
+- Podem ser usados por outros aplicativos
+- HTTP e XML são a base para Web Service
+
+SOAP
+Simple Object Access Protocol / Protocolo Simples de Acesso a Objetos
+Protocolo para troca de informações estruturadas em uma plataforma descentralizada e distribuída. Ele se baseia na linguagem de Marcação Extensível (XML)
+- Um mecanismo para definição de unidades de comunicação
+- Um modelo de processamento
+- Um mecanismo para a manipulação de erros
+- Um modelo de extensibilidade
+- Um mecanismo flexível para representação de dados
+- Uma convenção para a representação de chamadas remotas de procedimentos e respostas
+- Uma estrutura para um protocolo de vinculação
+
+WSDL
+Web Services Description Language
+É uma notação XML com a definição da interface fornecida pelo provedor de serviços da Web
+
+Envelope SOAP
+Funciona como um recipiente de todos os outros elementos da mensagem, possívelmente o cabeçalho e o corpo, assim como namespaces de cada um
+
+REST
+Representational State Transfer / Transferência Representacional de Estado
+Um estilo de arquitetura de software que define um conjunto de restrições a serem usadas para a criação de web Services
+
+JSON
+É um arquivo que contém uma série de dados estruturados em um formato texto e é utilizado para transferir informações entre sistemas
+
+HTTP Verbs
+GET - Solicita a representação de um recurso específico. Requisições utilizando o método GET devem retornar apenas dados.
+POST - É utilizado para submeter uma esntidade a um recurso específico, frequentemente causando uma mudança no estado do recurso ou efeitos colaterais no servidor
+DELETE
+PUT
+PATH
+
+WebService na Nuvem
+
+Cloud computing
+Computação em Nuvem
+- Disponibilidade sob demanda de recursos do esistema de computadores
+- Armazenamento de dados e capacidade de computação, sem o gerenciamento ativo direto do utilizador
+- Centro de dados disponíveis para muitos utilizadores pela Internet
+- Nuvens em grande escala, predominantes hoje em dia, geralmente tem funções distribuídas em vários locais dos servidores centrais
+
+FaaS - Function as a Service
+Um tipo de serviço de cloud computing que permite que os desenvolvedores criem, executem e gerenciem pacotes de aplicações como funções,
+sem a necessidade de se preocupar com a manutenção da infraestrutura.
+
+AWS Lambda
+É um serviço de computação sem servidor e orientado a eventos que permite executar código para praticamente qualquer
+ tipo de aplicação ou serviço de backend sem provisionar ou gerenciar servidores
+
+
+
+
