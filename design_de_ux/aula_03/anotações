@@ -1,0 +1,153 @@
+Professor - Milene Selbach Silveira
+
+https://leanpub.com/ihc-ux
+https://leanpub.com/ihc-ux/c/sPaKwpr6oyl8
+
+O que é IHC?
+Interação Humano-Computador é a disciplina preocupada com o desig, avaliação e implementação de sistemas computacionais
+ interativos para o uso humano e com o estudo dos principais fenômenos ao redor deles
+
+Objetivo
+A área de IHC tem, por objetivo principal, fornecer aos pesquisadores e desenvolvedores de sistemas, explicações e previsões
+ para fenômenos de interação usuário-sistema e resultados práticos para o design da interface de usuário
+
+Entender as necessidades dos usuários:
+- Considerar no que as pessoas são boas ou não
+- Considerar o que pode auxiliar as pessoas na sua atual maneira de fazer as coisas
+- Pensar no que pode proporcionar experiÊncias de usuário com qualidade
+- Ouvir o que as pessoas querem e envolvê-las no design
+- Utilizar técnicas baseadas no usuário, que tenham sido testadas e aprovadas
+
+Interface
+Toda a porção do sistema com a qual o usuário mantém contato físico ou conceitual durante a interação.
+Dispositivos de entrada (teclado, mouse, câmera, etc) permitem ao usuário agir sobre a interface do sistema e participar ativamente da interação
+Dispositivos de sáida, como monitor, impressora e alto-falante, permitem perceber as reações do sistema e participar passivamente da interação
+
+Interação
+É o processo de comunicação entre pessoas, mediadas por sistemas computacionais (interação usuário-sistema)
+
+Critérios de Qualidade em IHC
+Usabilidade
+ - Facilidade de aprendizado
+ - Facilidade de uso ou de memorização/recordação
+ - Eficiência de uso
+ - Flexibilidade
+ - Segurança no uso
+ - Satisfação do usuário
+Experiência do usuário
+Comunicabilidade
+Acessibilidade
+ - Limitações físicas
+ - Limitações mentais
+ - Limitações de aprendizado
+
+Princípios de Design
+Visibilidade - Tornar visível o que se pode fazer
+Feedback - Retorno de informação a respeito da ação realizada
+Restrições - Delimitações das ações do usuário
+Consistência - Operações e elementos semelhantes para tarefas similares
+Affordance - Atributo de um objeto que permite às pessoas saber como utilizá-los
+
+Processos de Design
+Atividades básicas do design
+análise da situação atual: estudar e interpretar a situação atual
+síntese de uma intervenção: planejar e executar uma intervenção na situação atual
+avaliação da nova situação: verificar o efeito da intervenção, comparando a situação analisada anteriormente com a nova situação, atingida após a intervenção
+
+Pesquisa com usuários
+Questões éticas
+Coleta de Dados
+ - Definição dos objetivos
+ - Identificação dos participantes
+ - Relacionamento com participantes
+ - Triangulação
+ - Estudo-piloto
+Requisitos dos usuários
+
+Exemplos de técnicas de coleta:
+- Entrevistas
+- Questionários
+- Grupos de foco
+- Estudos de campo
+- Investigação contextual
+- Brainstorming de necessidades e desejos dos usuários
+- Classificação de cartões (card sorting)
+
+Organizando os Dados
+Perfil do Usuário
+Personas
+Análise das tarefas
+
+Cenários
+Elementos característicos de um Cenário:
+- ambiente ou contexto
+- atores
+- objetivos
+- planejamento
+- ações
+- eventos
+- avaliação
+
+Avaliação
+É uma etapa essencial em qualquer processo de desenvolvimento que busque produzir um sistema interativo com alta qualidade de uso
+O que avaliar?
+Apropriação
+
+Métodos de Avaliação
+Investigação
+ - Entrevistas
+ - Questionários
+ - Diários
+Inspeção
+ - Avaliação Heurística
+ - Percurso Cognitivo
+ - Inspeção Semiótica
+Observação Direta
+ - Testes de Usabilidade
+ - Avaliação de Comunicabilidade
+ - Prototipação em Papel
+Observação Indireta
+ - Análise de logs
+
+ Métodos de Inspeção
+ As 10 Heurísticas
+
+ Severidade de um problema
+ A frequencia com que o problema ocorre: é um problema comum ou raro?
+ O impacto do problema, se ocorrer: será fácil ou difícil para os usuários superarem o problema?
+ A persistência do problema: o problema ocorre apenas uma vez e será superado pelos usuários, ou atrapalhará os usuários repetidas vezes?
+
+ Métodos de Observação de Uso
+ Uso de métodos que permitem ao valiador coletar dados sobre situações em que os participantes realizam suas atividades, com ou sem apoio de tecnologia computacional
+ O registro e a análise destes dados permitem identificar problemas reais que os participantes enfrentaram, e não apenas problemas potenciais previstos pelo avaliador em uma Avaliação por Inspeção
+
+Etapas de um Teste com usuários
+-Desenvolver o experimento
+-Orientar as sessões de observação
+-Coletar os dados
+-Analisar os dados
+-Tirar conclusões
+-Reprojetar e implementar a interface revisada
+
+Etapa - Desenvolver o experimento
+Plano de Teste
+Orçamento do Teste
+Escolha dos usuários
+Escolha dos avaliadores
+Aspectos Éticos
+Escolha das tarefas
+
+Etapa - Orientar as sessões de observação
+Preparação
+Introdução
+Durante o Teste - Evitar comentários e ajuda
+Pós-Teste
+
+Etapa - Coletar os Dados
+Observação Direta - Assistir ao usuário em seu trabalho
+Observação Indireta - Gravações em vídeo ou por software
+
+Etapa - Analisar os dados
+Análise baseada em tarefas
+Análise baseada em desempenho
+
