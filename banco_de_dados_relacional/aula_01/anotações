@@ -1,0 +1,76 @@
+Professor - Cláudio Bonel
+
+Banco de Dados
+- Representam algum cenário do mundo real, muitas vezes chamado de "minimundo".
+- As mudanças que ocorrem no mundo real, refletem no minimundo e, consequentemente no Banco de Dados.
+- É uma coleção de dados, obviamente, que sejam COERENTES, CORRELACIONÁVEIS e que, principalmente, tenham algum siginificado importante.
+- São projetados, desenvolvidos e populados com dados que possuam uma finalidade específica.
+- Possui usuários com intenção em manipular e analisar esses dados, bem como aplicações, softwares que são concebidos para serem utulizados por estes usuários.
+
+Sistema de Gerenciamento de Banco de Dados (SGBD)
+- É um sistema de computador que permite criar e administrar um banco de dados.
+- Os metadados são as informações descritivas de um banco de dados, normalmente chamamos de "dados sobre os dados".
+Exemplos: Microsoft SQL Server, Azure SQL DB, Oracle, MySQL, PostgreSQL, SQLite IBM DB2
+
+Em um banco de dados, tem por objetivo descrever os objetos - Metadado (Coluna da tabela)
+
+Sistema de banco de dados é a união do banco de dados com o SGBD
+
+Tipos de Dados Importantes
+- INT: Números inteiros
+- DECIMAL/FLOAT/REAL: Armazena números decimais, com precisão definida.
+Ex. DECIMAL(10,2), armazena até 10 números ao lado esquerdo da vírgula e 2 casas decimais.
+- CHAR: Texto fixo
+Ex. CHAR(4) será uma coluna que armazena necessáriamente 4 caracteres. Prenchendo com espaço caso não tenha sido inserido o tamanho definido.
+- VARCHAR: Texto variável
+Ex. VARCHAR(255), será uma coluna que armazenerá até 255 caracteres
+DATE: Armazena data
+DATETIME: Armazena data e hora
+
+Modelo de dados
+- Principal característica de um banco de dados. É o modelo de dados que oferecerá correlação, coerência e abstração
+- Essa abstração está diretamente ligada o conhecimento que se deseja obter sobre os dados, sob diferentes perspectivas
+- É composto por tabelas e estas, por sua vez, estão relacionadas entre si
+- Estes relacionamentos possuem regras, de modo a garantir a integridade dos dados.
+- É pelo fato de existirem relacionamentos, este modelo é frequentemente chamado de "Modelo de dados relacional" ou "Banco de dados relacional"
+
+Cardinalidade
+É um dos princípios fundamentais sobre o relacionamento de um banco de dados relacional, nela são definidos os graus de relação entre duas entidades ou tabelas.
+A cardinalidade qualifica a relação avaliando os campos de relacionamento
+Um relacionamento cardinal pode ser de três tipos:
+- 1:*
+- 1:1
+- *:*
+
+Modelo de dados conceitual
+- Modelo Entidade-Relacionamento (MER)
+- É chamado de "conceitual", visto que é utilizado para o entendimento dos conceitos e processos-chave que deverão ser implantados no seu 
+diagrama de banco de dados.
+- Utiliza-se como técnica de aplicação do modelo Diagrama Entidade-Relacionamento (DER) que é a apresentação estruturada desenhada no MER
+- No MER existem as Entidades(Tabela) e os Atributos(Colunas)
+
+Ferramenta draw.io para fazer os diagramas
+
+Constraints (Restrições)
+- Primary Key
+- Foreign Key
+- Unique
+- Not Null
+- Default
+
+Índice
+- Objetivo primordial de agilizar a recuperação de registros durante as consultas a dados
+- Recurso que pode ser aplicado em qualquer coluna de qualquer tabela
+- Em mas de 1 coluna. Não há restrições quanto a isso
+- Colunas, cujo o tipo de dados é inteiro e estão ordenados crescentemente, tornam as  consultas mais ágeis, porém não há nada que impeça a indexação de colunas de outro tipo de dado
+- Recomenda-se que colunas chaves sejam indexadas. Ressalta-se aqui, que qualquer coluna, chave ou não, pode ser indexada.
+
+Modelo Lógico
+Desenho mais próximo da implantação do banco de dados. É a evolução do conceitual.
+
+
+
+
+
+
+

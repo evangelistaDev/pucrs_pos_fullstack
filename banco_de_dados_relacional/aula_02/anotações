@@ -1,0 +1,23 @@
+Object-Relational Mapping (ORM)
+Mapeamento objeto-relacional
+
+- Recursos que as linguagens de programação se utilizam para integrarem seus softwares aos banco de dados, de forma transparente,
+utilizando-se de sua própria linguagem.
+- Através de definições de classe:
+ - Metadados, ou seja, tabelas (entidades) e colunas (atributos)
+ - Seus tipos de dados, restrições necessárias (constraint)
+ - Manipular dados
+
+DDL - Linguagem de definição de dados é uma linguagem de computador usada para a definição de estruturas de dados
+DML - Linguagem de Manipulação de Dados é uma família de linguagens de computador utilizada para a recuperação, inclusão, remoção e modificação de informações em bancos de dados.
+
+ORM no Python - SQLAlchemy
+- Biblioteca do Python que possibilita a utilização dos recursos de ORM, para criação de modelos de dados em banco de dados
+- As classes que o SQLAlchemy disponibiliza, oferecem os seguintes recursos:
+ - Criação de entidades (tabelas)
+ - Criação de atributos (colunas)
+ - Definição de tipos de dados e constraints, incluindo chaves primária, estrangeira e index
+ - Definição de relacionamentos
+ - Querying Data (Consulta a dados)
+
+ 

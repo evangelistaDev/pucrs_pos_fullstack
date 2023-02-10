@@ -1,0 +1,330 @@
+Professor - Azriel Majdenbaum
+
+Ferramentas utilizadas
+livesql.oracle.com
+https://www.brmodeloweb.com/lang/pr-br/index.html
+Download https://sourceforge.net/projects/brmodelo/
+
+Modelo relacional
+É um modelo lógico de dados, originalmente proposto por Edgard Frank Codd, caracterizado por:
+- Independência de dados
+- Linguagem Estruturada de Consulta (SQL)
+- Redução de Redundância
+- Simplicidade na representação dos dados
+- Simplicidade na representação dos resultados das consultas sobre os dados
+
+Conceitos Formais
+- Domínio - dado uma característica de um objeto da realidade, por exemplo, o número de matrúcula de um aluno, o domínio deste elemento
+de dado é o conjunto de todos os números de matrícula possíveis
+- Relação - um objeto da realidade pode ser representato, de forma abstrata, por um conjunto de elementos de dados definidos, cada um, sobre um domínio
+
+Cada Relação possui:
+ - Um cabeçalho - composto pelo conjunto de atruibutos
+ - Um corpo - composto por um conjunto de tuplas, cada qual correspondendo à representação abstrata de um objeto da realidade
+ Uma Tabela armazena os objetos de uma classe da realidade
+ Uma Tabela é composta por colunas, as quais armazenam determinado atributo dos objetos da classe
+ Cada instância de uma classe(objeto) é armazenada como uma linha da Tabela
+
+A Linguagem SQL (Structured Query Language)
+Pode ser dividida em 5 conjunto de comandos
+- Recuperação de Dados -> Comando SELECT
+- Linguagem de Definição de Dados - DDL -> Comandos para criação e manutenção de objetos (CREATE, ALTER, DROP, RENAME e TRUNCATE)
+- Linguagem de Manipulação de Dados - DML -> Comandos para inserções, atualizações e exclusões (INSERT, UPDATE e DELETE)
+- Linguagem para controle de transações -> (COMMIT, ROLLBACK e SAVEPOINT)
+- Linguagem para controle de acesso a dados -> (GRANT e REVOKE)
+
+Criação de Tabela:
+
+CREATE TABLE VEICULOS
+(
+    placa CHAR(8),
+    ano NUMBER(4),
+    km NUMBER(6),
+    marca VARCHAR(50),
+    modelo VARCHAR(50)
+);
+
+Inserção de dados na Tabela - Veículos
+
+INSERT INTO VEICULOS
+VALUES ('IJK-1212', 2022, 0, 'Chevrolet', 'Onix');
+
+INSERT INTO VEICULOS (placa, ano, km, marca, modelo)
+VALUES ('IJM-1556', 2015, 72045, 'Volkswagen', 'Gol');
+
+Consulta de dados na Tabela - Veículos
+
+SELECT *
+FROM VEICULOS;
+
+Atualização de dados na Tabela - Veículos
+
+UPDATE VEICULOS
+SET marca = 'Chevrolet'
+WHERE placa = 'KJP-1559';
+
+UPDATE VEICULOS
+SET km = km + 100
+WHERE ano >= 2015 AND ano <= 2021
+
+Exclusão de dados
+
+DELETE FROM VEICULOS
+WHERE placa = 'IJM-1556'
+
+ORDER BY
+
+SELECT placa, km
+FROM VEICULOS
+ORDER BY km
+
+SELECT placa, km
+FROM VEICULOS
+WHERE ano > 2000
+ORDER BY km DESC
+
+SELECT marca, modelo
+FROM VEICULOS
+ORDER BY marca DESC, modelo ASC
+
+
+COUNT(*)
+
+SELECT COUNT(*)
+FROM VEICULOS
+
+SELECT COUNT(*)
+FROM VEICULOS
+WHERE marca = 'Ford'
+
+DISTINCT
+
+SELECT DISTINCT marca
+FROM VEICULOS
+
+NULL
+
+CREATE TABLE PESSOAS 
+(
+    cpf VARCHAR(20) NOT NULL,
+    nome VARCHAR(150) NOT NULL,
+    idade NUMBER (3) NULL,
+    endereco VARCHAR(150)
+)
+
+INSERT INTO PESSOAS (cpf, nome, idade, endereco)
+VALUES ('32809', 'Maria', 25, 'Rua A, 20')
+
+INSERT INTO PESSOAS (idade, endereco, cpf, nome)
+VALUES (25, 'Rua A, 20', '30599', 'Pedro')
+
+INSERT INTO PESSOAS (cpf, nome, idade, endereco)
+VALUES ('29358', 'Carlos', NULL, NULL)
+
+INSERT INTO PESSOAS (cpf, nome, idade, endereco)
+VALUES ('39582', 'Alice', 80, NULL)
+
+INSERT INTO PESSOAS (cpf, nome, idade, endereco)
+VALUES ('78838', 'Antonio', NULL, 'Rua B, 80')
+
+SELECT * 
+FROM PESSOAS
+WHERE idade IS NULL
+
+SELECT *
+FROM PESSOAS
+WHERE endereco IS NOT NULL;
+
+LIKE e IN
+
+SELECT * 
+FROM PESSOAS
+WHERE nome LIKE 'A%'
+
+SELECT * 
+FROM PESSOAS
+WHERE nome LIKE '%Carlos%'
+
+SELECT *
+FROM PESSOAS
+WHERE nome LIKE 'Mari_ da Silva' pode conter Mario ou Maria
+
+SELECT *
+FROM PESSOAS
+WHERE idade IN (25, 30, 40)
+
+ALTER TABLE
+
+ALTER TABLE PESSOAS
+ADD sexo CHAR(1)
+
+DATE
+
+ALTER TABLE PESSOAS
+DROP COLUMN idade
+
+ALTER TABLE PESSOAS
+ADD datanasc DATE NULL
+
+INSERT INTO PESSOAS (cpf, nome, datanasc, endereco)
+VALUES ('29048', 'Roberto', '03-FEB-1980', 'Rua D, 80')
+
+INSERT INTO PESSOAS (cpf, nome, datanasc, endereco)
+VALUES ('29048', 'Roberto', DATE '1980-02-03', 'Rua D, 80')
+
+SELECT TO_CHAR(SYSDATE, 'MONTH, DD, YYYY HH24:MI:SS') FROM DUAL
+
+SELECT nome, TO_CHAR(datanasc, 'MONTH, DD, YYYY')
+FROM PESSOAS
+
+INSERT INTO PESSOAS (cpf, nome, datanasc, endereco)
+VALUES (
+    '29920',
+    'Beto',
+    TO_DATE('25-FEB-1979 21:36:28', 'DD-MON-YYYY HH24:MI:SS'),
+    'Rua E, 80'
+)
+
+SELECT SYSDATE + 30
+FROM DUAL
+
+SELECT SYSDATE - (SYSDATE - 12)
+FROM DUAL
+
+Integridade
+
+CREATE TABLE ALUNOS (
+    nroMatricula VARCHAR(10) NOT NULL,
+    cpf VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    nome VARCHAR(150) NOT NULL,
+    anoIngresso NUMBER(4) NOT NULL,
+    endereco VARCHAR(150) NULL,
+    sexo CHAR(1) NOT NULL,
+
+    CONSTRAINT PK_ALUNOS PRIMARY KEY (nroMatricula),
+    CONSTRAINT AK1_ALUNOS UNIQUE (cpf),
+    CONSTRAINT AK2_ALUNOS UNIQUE (email)
+)
+
+AK - Alternate Key
+
+Integridade de Domínio
+
+ALTER TABLE ALUNOS
+ADD CONSTRAINT CK_AnoIngresso CHECK (anoIngresso > 2000)
+
+ALTER TABLE ALUNOS
+ADD CONSTRAINT CK_sexo CHECK (sexo IN ('M', 'F'))
+
+Integridade Referencial
+
+CREATE TABLE ESTADOS (
+    uf CHAR(2) NOT NULL,
+    nome VARCHAR(40) NOT NULL,
+    regiao CHAR(2) NOT NULL,
+    CONSTRAINT PK_ESTADOS PRIMARY KEY (uf)
+)
+
+CREATE TABLE CIDADES (
+    cod_cidade NUMBER(4) NOT NULL,
+    nome VARCHAR(60) NOT NULL,
+    uf CHAR(2) NOT NULL,
+    CONSTRAINT PK_CIDADES PRIMARY KEY (cod_cidade)
+)
+
+ALTER TABLE CIDADES
+ADD
+(
+    CONSTRAINT FK_ESTADO_CIDADE
+        FOREIGN KEY (uf)
+         REFERENCES ESTADOS (uf)
+)
+
+Criar tabela intermediária quando o relacionamento for N para NOT
+
+JOIN
+
+INNER JOIN
+
+SELECT EST.uf, EST.nome, CID.uf, CID.nome
+FROM ESTADOS EST INNER JOIN CIDADES CID
+ON EST.uf = CID.uf
+ORDER BY EST.uf
+
+
+OUTER JOIN
+
+SELECT EST.uf, EST.nome, CID.uf, CID.nome
+FROM ESTADOS EST LEFT OUTER JOIN CIDADES CID -- OU RIGHT OUTER JOIN OU FULL OUTER JOIN
+ON EST.uf = CID.uf
+ORDER BY EST.uf
+
+JOINS ENCADEADOS
+
+Funções
+
+Funções de Agregação
+
+Exemplos
+SELECT AVG(preco) MEDIA FROM PRODUTOS;
+SELECT AVG(NVL(preco,0) MEDIA FROM PRODUTOS; NVL converte valores NULL
+SELECT MAX(preco) FROM PRODUTOS
+SELECT COUNT(*) NUM CLIENTES FROM CLIENTES
+SELECT COUNT(ddd) FROM TELEFONES
+
+GROUP BY
+
+SELECT COUNT(DISTINCT TIPO) FROM PRODS
+
+SELECT tipo, COUNT(*)
+FROM PRODS
+GROUP BY tipo
+ORDER BY  tipo
+
+HAVING
+É utilizada em conjunto com o GROUP BY
+
+SELECT tipo, COUNT(*)
+FROM PRODS
+GROUP BY tipo
+HAVING AVG(preco) > 300
+
+SUBCONSULTAS
+
+Insere os registros do Select abaixo
+INSERT INTO....
+SELECT
+
+Atualiza os registros do Select abaixo
+UPDATE
+SET
+WHERE IN
+(SELECT)
+
+Apaga os registros do select abaixo
+DELETE FROM
+WHERE IN (SELECT)
+
+INDEXAÇÃO
+O rowid é uma pseudo coluna que me dá o endereço físico de uma coluna. Dentro dessa estrutura está o endereço completo
+para o SGBD encontrar o registro no disco. Ele faz um acesso direto ao DATABLOCK no disco.
+O índice é um arquivo separado, composto de duas informações, a chave de busca ordenada e o rowid
+
+O Oracle cria automaticamente o índice da chave primária (PK)
+Para garantir que não haja repetição de dados
+Trazendo vantagem nas consultas
+Desvantagem:
+Cada vez que um novo registro é inserido, ele precisa atualizar os índices
+- Equilibrar a quantidade de índices x inserções
+- Criar índices extremamente necessários
+- O Oracle não cria índice para chave estrangeira
+
+CREATE INDEX idx_autores_nome ON AUTORES (nome);
+
+SEQUENCE
+Auto Incremento:
+CREATE SEQUENCE seq_titulacoes START WITH 6;
+SELECT seq_titulacoes nextval FROM DUAL;
+INSERT INTO TITULACOES (cod_titulacao, titulo) VALUES (seq_titulacoes.nextval, 'Tecnologo')
+SELECT seq_titulacoes currval FROM DUAL
