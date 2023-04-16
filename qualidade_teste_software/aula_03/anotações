@@ -1,0 +1,103 @@
+Professor Daniel Callegari
+
+Tipos de Técnicas:
+
+Estáticas
+Não requerem que o sistema seja executado
+Ex.: Revisões
+
+Dinâmicas
+Requerem trabalhar com uma representação executável do sistema
+Ex.: Testes
+
+Níveis de teste de software
+- Teste de unidade
+- Teste de integração
+- Teste de sistema
+- Teste de regressão
+
+Terminologia
+Caso de Teste é um subconjunto de entradas e saídas planejadas, para um ambiente controlado de execução
+Roteiro de teste é um conjunto de casos de teste
+
+Dimensões de Teste
+Tipos de Teste
+- Teste de regressão
+- Teste de usabilidade
+- Teste de Desempenho
+- Teste de Configuração
+- Teste de confiabilidade
+- Teste de recuperação
+- Teste de segurança
+- Teste de instalação
+
+Níveis de teste
+- Além dos citados acima
+- Teste de aceitação
+
+Técnicas de Teste
+- Caixa preta
+    - Teste funcional
+    - Baseado na espeficicação formal
+    - Uso mais comum no nível de sistema
+- Caixa branca
+    - Teste estrutural
+    - Baseado na estrutura do programa
+    - Uso mais comum nos níveis de unidade e integração
+
+Teste Funcional
+- Vantagens
+    - Independe da linguagem/paradigma
+    - Pode ser manual ou automatizado
+    - Pode ser usada em todos os níveis
+- Limitações
+    - Depende de uma boa especificação de requisitos
+    - Depende da capacidade de interpretar os requisitos
+    - Pode não identificar funcionalidades ausentes
+    - Depende do gerente de projetos identificar quais as funcionalidades mais relevantes
+
+Teste de unidades
+A menor unidade testável em um sistema
+Diversas granularidades
+- Função, método
+- classe
+- página web
+- script
+- módulo
+- componente
+
+Teste de integração
+Ciclo de desenvolvimento orientado a testes (TDD)
+1 - Adicione um teste
+2 - Execute todos os testes; O novo teste deve falhar, e por motivos esperados.
+3 - Escreva o código mais simples que passa no novo teste
+4 - Todos os testes agora devem passar
+5 - Refatore conforme necessário
+ - mova o código para onde ele mais logicamente pertence
+ - remova código duplicado
+ - torne nomes auto documentados
+ - divida métodos em partes menores
+ - reorganize hierarquias e herança
+6 - Repetir
+
+Teste regressão
+Procuram verificar novamente os casos de teste aprovados em versões anteriores do sistema.
+Objetivo é de proteger contra alterações indesejadas quando modificamos ou acrescentamos funcionalidades
+Técnicas:
+- reteste completo
+- seleção de testes
+- priorização de casos de teste
+- híibrido
+
+Teste de sistema
+Avaliar o comporamento funcional, requisitos de qualidade (confiabilidade, usabilidade, desempenho e segurança)
+Serve como um bom cenário de ensaio para o teste de aceitação
+
+
+https://jsonplaceholder.typecode.com
+
+JUnit
+Jest
+Selenium - Plugin no Browser
+Lighthouse
+

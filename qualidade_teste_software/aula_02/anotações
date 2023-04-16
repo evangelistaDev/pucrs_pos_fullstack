@@ -1,0 +1,99 @@
+Projetos ágeis
+-Qualidade sempre presente
+-Entender o ciclo de vida e como estar sempre atualizado
+
+Projeto complexo
+São projetos que demandam uma efetiva gestão de riscos no processo tendo como dependências internas e externas
+
+Como atuar?
+De maneira direta, a qualidade deve ser refletida em todos os processos do ciclo de vida
+
+Ferramentas
+Cada uma das fases tem uma ferramenta na fase específica
+
+Testador x SDET (Software Development Engineer in Test)
+- Um profissional que pode trabalhar como desenvolvedor de software ou desenvolvedor de testes
+- Pode auxiliar nos processos dependendo da demanda
+- Tem um viés, por conhecer o código
+- Profissional mais "completo" para atuar
+- Não é, necessariamente, especializado em testes
+
+Certificações de qualidade de teste de software
+Certificadores
+- Quality Assurance Institute (QAI)
+- International Software Testing Qualifications Board (ISTQB)
+Certificações mais conhecidas pela indústria
+- Certified Test Engineer (CSTE) - QAI
+- Certified Software Quality Analyst (CSQA) - QAI
+- Certified Associate in Software Testing (CAST) - QAI
+- CMSQ (Certified Manager of Software Quality) - QAI
+- ISTQB
+
+O que são KPIs?
+-Key Performance Indicator
+ - Satisfação do cliente
+ - Processo Interno de qualidade
+ - Satisfação do funcionário
+ - Índice de performance financeira
+
+-Quais KPIs devo escolher?
+
+ - Custo do trabalho
+ - Percentual de entregas perdidas
+ - Estimativas de artefatos entregues (no tempo)
+ - Custo da gerência de processos
+ - Ordem completada por ciclo de tempo
+ - Throughput - Capacidade de colocar coisas para fora (artefato, código)
+ - Crescimento de mercado
+ - Satisfação do consumidor
+ - Variância entre falhas
+ - Média de tempo para resposta inicial
+
+Como correlacionar níveis de qualidade com métricas?
+-Teste unitário
+    - Quantidade de linhas de código adicionadas/modificadas por período de tempo
+    - Número de defeitos a cada mil linhas de código (KLoC)
+    - % de cobertura de código
+- Teste de integração
+    - Defeitos por componentes
+    - Componentes mais alterado x defeitos achados (efetividade do teste)
+- Sistema
+    - Quantidade de defeitos achados por tempo (por prioridade)
+    - Quantidade de defeitos resolvidos por tempo
+    - Idade dos defeitos por prioridade
+
+Teste A / B
+São testes que comparam duas versões de conteúdo para identificar qual versão tem maior atratividade aos clientes. Sempre se ferifica a versão A contra a versão B
+como parâmetro de medida, baseado nas métricas atribuidas.
+- Tráfego gerado
+- Quantos usuários completaram a ação
+- Quantos usuários responderam dentro do tempo esperado
+- Qual foi o potencial para engajamento
+
+Os testes A / B proveem maiores benefícios quando ocorrem continuamente. Com a cadencia correta, pode-se gerar um conjunto de recomendações
+e melhorias de performance atreladas ao serviço ou produto.
+Canais de contato com o cliente podem se aproveitar deste tipo de validação para verificar a eficácia de comunicação através de:
+- Email
+- Newsletter
+- Propaganda
+- SMS
+- Páginas de anúncio de website
+- Aplicativos em Smartphones
+
+Como aplicar os testes A / B
+- Entendimento e revisão da Baseline
+- Determinação de um objetivo baseado na Baseline
+- Desenvolvimento de uma hipótese que irá alavancar a Performance
+- Identificação dos alvos para teste e localização
+- Criação de versões A e B
+- Utilização de ferramentas de automação de testes
+- Execução e validação dos resultados do teste com uso de ferramentas analíticas
+- Aplicar o conhecimento na melhoria dos processos e experiência
+
+Ferramentas de análise
+- Para validação da hipotese é necessário se estabelecer comparações
+- As ferramentas de analytics podem ser validadores baseados em tráfego de rede e tempo de espera
+- Tráfego - visualização das páginas, visitantes únicos
+- Engajamento - tempo decorrido, número de páginas por visita, fuga
+- Conversões - número de clicks, registros, cadastros
+- Tendência de performance ao longo do tempo

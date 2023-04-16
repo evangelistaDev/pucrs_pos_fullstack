@@ -1,0 +1,159 @@
+Professor - Ricardo Beck
+
+Teste é um exercício de disciplina
+
+O que é qualidade?
+Qualidade é uma sensação que um produto ou serviço atende a necessidade do cliente
+
+O que é um projeto complexo?
+São projetos que demandam uma efetiva gestão de riscos no processo tendo como dependências internas e externas.
+Diferentes áreas de conhecimento e múltiplas organizações
+
+Ciclo de vida de projetos de software:
+Waterfall - Cascata
+- Projetos regulares com etapas definidas para - Investigação, prototipação, desenvolvimento, testes e liberação em produção.
+Ciclo de vida ágil
+- Projetos interativos onde a cada etapa de tempo (sprint) ocorre uma entrega de valor
+
+Tipos de testes e suas características
+Exige uma repetibilidade de processos e consistência nos fluxos
+
+Conceito de caixa transparente
+A caixa transparente advém da possibilidade de conhecermos as partes "internas" do artefato a ser testado.
+Também são conhecidas expressões como "caixa branca, caixa preta e caixa cinza"
+
+Conceito de unidade para testes
+Uma unidade pode ser considerada a menor parte indivisível do código:
+DD Path - Decision to Decision -> Se então
+DU Path - DEclaração e uso de variáveis -> manipulação de variáveis
+
+Necessidade de isolamento entre componentes
+As unidades devem ser isoladas entre si, de forma a garantir o mínimo de interferência externa quando os estímulos forem recebidos.
+Para isso é necessário se criar Stubs, chamados de esqueletos que sempre respondem a um valor conhecido quando a classe ou método depende de algum agente externo.
+Os estímulos gerados devem ser rastreáveis e repetitivos.
+
+Estratégias de teste unitário
+
+TDD - Test Driven Development
+Cria-se o teste unitário antes de começar a codificação.
+Nessa estratégia os testes devem falhar inicialmente, após a falha se escreve o código para que o teste passe.
+
+BDD - Behavior Driven Development
+Entende-se a demanda da unidade para que seja, criados os testes. Podem ser baseados em "promessas" ou requisitos funcionais / não-funcionais
+Exemplo
+Como um (pessoa ou perfil)
+Eu gostaria de (funcionalidade)
+Para que (objetivo ou benefício)
+
+Critérios de aceitação:
+Dado que (critério inicial)
+Quando (evento que inicia a ação)
+Então (resultados esperados)
+
+Integração dos testes unitários no dia-a-dia
+Pode ser executado localmente ou em uma pipeline, ou executar a cada commit.
+
+Ferramental para criação/execução e relatórios
+Java - Eclipse - JUnit
+.NET - Visual Studio - NUnit
+Javascript - Mocha
+Jest
+
+Criação e apresentação de relatórios
+Allure
+
+Processos de Build
+Estratégia 1
+- Executar todos os testes unitários após cada commit. Essa forma provê uma grande confiabilidade no código a ser integrado,
+porém causa filas no aguardo para validação.
+Estratégia 2
+- Executar os testes relativos ao código a ser inserido na branch principal. Essa estratégia provê uma maior velodicade e pontualidade dos processos.
+Todavia, cria-se uma demanda de executar os testes completos ao final de um péríodo de tempo (dia, semana ou sprint)
+
+Processos de review e merge
+Os processos de revisão para o time de desenvolvimento voltado à qualidade devem se ater aos padrões de
+código definidos pelo time e também a cobertura de testes unitários provida.
+Muitas vezes quando postergados os testes unitários acabam por promover novas atividades futuras de retrabalho, conhecidas como dívidas técnicas.
+A integração do código gerado com a branch principal só deve ser feita (aprovada) após verificações de padronagem de código,
+testes unitários e avaliações estáticas de código (como exemplo o Lint)
+
+Testes de integração
+Os testes de integração avaliam o ecossistema no qual os diferentes métodos ou classes se integra, compondo a solução.
+
+Estratégias de integração de componentes
+Top-down -> Cria-se testes para a camada mais superior da solução. O maior problema dessa abordagem é a grande quantidade de variáveis
+para diagnóstico da causa raiz. Mas a complexidade dos testes é mais baixa.
+
+Bottom-up -> Onde os métodos e classes vão sendo testados aos poucos mantendo partes isoladas. A desvantagem dessa abordagem é o consumo excessivo de tempo
+para execução e manutenção dos testes a cada interação de software.
+
+Sanduíche - um misto das duas abordagens, onde partes mais cíticas do sistema são testadas individualmente e partes mais estáveis são testadas em alto nível pela integração.
+
+Ferramental para criação/execução e relatórios
+Jenkins - Test Harness
+Codeway - Test Pipeline - Usando Jest, JUnit e outros frameworks
+
+Testes de interface com o usuário
+São testes realizados manipulando-se os controles disponíveis visualmente.
+Principais pontos:
+- Verificação do alinhamento dos componentes visuais.
+- Verificação dos padrões de ancoragem, padronização das cores, fontes e espaçamentos.
+- Verificação do vocabulário usado.
+
+Teste de Performance
+São avaliações/inspeções periódicas que devem ser feitas visando um cenário de uso específico.
+As seguintes perguntas devem ser feitas:
+- Quantos usuários devem acessar (em média) a solução por minuto?
+- Quais são os limites de escalonamento (máquinas, memória, HD)?
+- Quais são os SLA's (Service Level Agreement) definidos (prazos e limites)?
+
+Definição de testes de Performance
+Estabelecer cenários incrementais de carga (100 usuários por minuto)
+ - 100 usuários por minuto = 100 / 60 = 1,7 usuários por segundo (2 usuários por segundo)
+ 1 - Carga inicial de 10 usuários por minuto por 5 minutos, adicionando-se 10 ao final do tempo.
+ 2 - Carga inicial de 100 usuários por minuto por 20 minutos, adicionando-se 10 ao final do tempo.
+ 3 - Carga inicial de 200 usuários por minuto por 1 hora.
+
+ Definição de Baseline
+ É definida como o padrão atual ou o padrão definido
+
+Ferramentas para análise de performance
+- LoadRunner
+- JMetter
+
+SLA e Performance
+SLA(Service Level Agreement) é um contrato firmado entre partes que estabelece limites de serviço. Muitas vezes define disponibilidade de serviço (99.999% do tempo funcionando) ou tempos de resposta
+Através das avaliações de performance podemos identificar possíveis falhas ou problemas como o SLA, assim como prover redundância como forma de mitigar possíveis riscos.
+
+Conceitos de Garantia de Qualidade
+- Estratégia de teste
+- Plano de testes
+- Casos de teste
+- Pré-requisitos
+- Passos de teste
+- Resultado esperado
+- Relatório de testes
+
+Repetibilidade do processo
+O processo de qualidade deve ser auditável a qualquer momento, para tanto é necessário que os processos que o compõem sejam bem documentados e se mantenham atualizados.
+Bem como o planejamento dos testes, passos e resultados esperados.
+O versionamento dos documentos é imprescindível para que a rastrabilidade da evolução seja auditável
+Teste de sofware é um exercício de disciplina
+
+Relatórios de teste
+Devem conter:
+- % de requisitos cobertos, com número de testes passando e falhando
+- Número de defeitos por prioridade
+
+Priorização dos itens identificados
+- Impacto ao usuário
+- Frequência de ocorrência
+
+Métricas voltadas ao controle de qualidade
+Métricas mais usadas:
+- Número de defeitos por prioridade(por versão)
+- Número de defeitos por Sistema/Browser/requisitos
+
+
+
+
