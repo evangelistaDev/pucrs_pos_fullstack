@@ -1,0 +1,44 @@
+Redis
+Porque usar?
+- Throughput de leitura/escrita excelentes
+- Esquema de dados flexível
+- Linguagem simples
+- Integração com múltiplos clientes
+- Facilmente escalável
+- Suporta adição de módulos com funcionalidadfes estendidas
+
+Conceitos
+- Todo valor salvo é atrelado a uma chave única
+- A arquitetura do Redis é single-threaded
+- Os valores podem ter formatos/estruturas diferentes
+- Os dados são todos mantidos em memória (RAM)
+- Cada valor tem um tamanho máximo de 512MB
+- Apesar de não oferecer paralelismo, tem suporte à concorrência
+
+Modelos de persistência
+- RDB (Redis Database): Realiza snapshots do banco de dados, de tempos em tempos, salvando o estado atual. Comum em casos onde o Redis é um banco secundários
+- AOF (Append Only File): Cria um arquivo de log, que salva todos os comandos realizados no Redis, que são repetidos quando o banco é reinicializado. Comum em casos onde o Redis é o banco principal/fonte da verdade
+- Sem persistência: Desabilitar persistência por completo, comum em casos onde o Redis é utilizado para caching
+
+Redis Search
+- Módulo que dá ao Redis a funcionalidade de indexar e realizar buscas por elementos
+- Suporte a paginação
+- Suporte a funções de agregação
+
+Neo4J
+Porque usar?
+- Suporta transações ACID
+- Base de dados flexível
+- Provém protocolo de comunicação REST
+- Muito performático em situações de conexões/relacionamentos entre dados
+- Consultas muito eficientes, quando comparadas com outros bancos
+
+Conceitos
+- Nós: A unidade básica, o registro no banco
+- Labels: Agrupamento/conjunto de nós
+- Relacionamentos: Conexão/ligação entre nós
+- Aspects: Informações de cada nodo
+- Baseado em algoritmos tradicionais
+- Linguagem de busca Cypher baseada em SQL
+- Feito em Java
+

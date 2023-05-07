@@ -1,0 +1,108 @@
+Professor - Eduardo Henrique Pereira de Arruda
+
+Conceitos
+Banco de Dados
+ - Coleção armazenada de elementos de dados representando objetos de uma realidade.
+ - Inúmeros Sistemas de Informação Transacionais podem ser desenvolvidos sobre um BD
+ - Logo o acesso ao BD é realizado por usuários desses SITs por meio de consultas e atualizações concorrentes
+
+Sistema de Gerência de Banco de Dados (SGBD's)
+Relacionais
+- Oracle
+- MySQL
+- SQLServer
+- PostGreSQL
+- MariaDB
+- DB2
+Não Relacionais
+- mongoDB
+- Cassandra
+
+Modelagem de Dados
+- Conceitual
+ - Compreender os requisitos dos futuros usuários do sistema e identificar que dados serão necessários armazenar
+- Lógica
+ - A partir dos requisitos representados, identificar as melhores estruturas lógicas de dados ideais para Implementação
+- Física
+ - Definidas as estruturas lógicas, implementar o banco de dados, criando suas estruturas de dados
+
+ Modelos de Dados
+ - Conceituais
+  - Modelo Entidade-Relacionamento - ER
+  - Modelo Orientado a Objetos - OO
+ - Lógicos
+  - Modelo Relacional
+  - Modelos Pós ou Não Relacionais, NoSQL ou Schemaless 
+ - Físicos
+  - Modelos de implementação suportados pelos SGBD'S
+
+Normalização de Dados
+- Processo pela qual cria-se um modelo relacional de dados pela aplicação de Formas Normais a dados brutos, ditos não normalizados
+- Visa obter um banco de dados livre de anomalia de atualização
+- Baseado no conceito de Forma Normal
+ Passos
+  1 - Definir identificador
+        - Determinar que atributos identificam o fato
+  2 - Definir as dependências funcionais
+        - Identificar dependências funcionais entre os atributos
+  3 - 1 Forma Normal
+        - Eliminar multivalorações
+  4 - 2 Forma Normal
+        - Eliminar dependências funcionais parciais
+  5 - 3 Forma Normal
+        - Eliminar dependências funcionais indiretas
+
+SGDB's Não Relacionais
+Requisitos
+ - Consistency - Consistência
+ - Availability - Disponibilidade
+ - Partition Tolerancy - Tolerância de partição ou particionamento
+
+ Teorema CAP
+ - Impossível conciliar os 3 requisitos de forma simultânea
+ - CA Consistência e Disponibilidade
+  - Oracle | MySQL | SQL Server | PostGreSQL | DB2 | Maria DB
+ - CP Consistência e particionamento
+  - Apache Hbase | mongoDB | Redis | MemCached
+ - AP Disponibilidade e particionamento
+  - Riak | Cassandra | CouchDB | Amazon Dynamo DB
+
+Modelo de Transações de SGDB'S
+
+ACID 
+ - Atomic - Atomicidade
+    - Cada transação é executada corretamente ou o processo é interrompido e o BD volta ao estado anterior ao início da transação
+    - Isso garante que todos os dados no banco de dados sejam válidos
+ - Consistent - Consistência
+    - Uma transação processada nunca colocará em risco a integridade estrutural do banco de dados
+ - Isolated - Isolamento
+    - As transações não podem comprometer a integridade de outras transações interagindo com enquanto ainda estão em andamento
+ - Durable - Durabilidade
+    - Os dados relacionados a transação concluída persistirão mesmo nos casos de queda de rede de energia. Se uma transação falhar, ela não afetará os dados manipulados
+
+Replicação de dados em SGBD's ACID
+
+Two-Phase Commit Protocol
+É um algoritmo distribuído que coodena todos os processos que participam de uma transação atômica distribuída para confirmar ou abortar a transação
+
+BASE
+ - Basically Available - Basicamente disponível
+    - Em vez de impor consistência imediata, os bancos de dados NoSQL modelados em BASE garantirão a disponibilidade dos dados,
+    espalhando-os e replicando-os pelos nós do cluster de banco de dados
+ - Soft State
+    - Devido à falta de consistência imediata, os valores dos dados podem mudar ao longo do tempo
+    - O modelo BASE rompe o conceito de banco de dados que impôe sua própria consistência delegando essa responsabilidade aos desenvolvedores
+ - Eventually Consistent - Eventualmente consistente
+    - O fato de o BASE não impor consistência imediata não significa que nunca a alcance
+    - No entanto, até que isso aconteça, as leituras de dados ainda são possíveis (mesmo que não reflitam a realidade)
+
+mongoDB - https://www.mongodb.com
+- MongoDB é um SGDB NoSQL gratuito para armazenamento de documentos
+- Suporta requisitos ACID em transações distribuídas com múltiplos documentos
+- Amplamente utilizado em implementações que obtpem benefício de SGDB's Schemaless (Sem esquema definido)
+- Documentos armazenados em formato JSON(BSON), permitindo armazenar documentos com estruturas diferentes o mesmo variá-las ao longo do tempo
+- Suporta indexação e agregação de dados
+
+Organização dos Dados
+- Databases - Armazenam registros de dados como documentos (BSON) reunidos em collections
+- Collections - Armazenam documentos, sendo análogas as tables em SGBD relacionais

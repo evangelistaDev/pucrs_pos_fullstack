@@ -1,0 +1,95 @@
+Professor - Vinícius Kroth
+https://github.com/ViniKroth/material-noSQL
+
+Palavras-Chave
+- Consistência: Dado deve ser visualizado de forma igual, por todos os requerentes
+- Durabilidade: Quanto tempo um dado deve estar disponível
+- Disponibilidade: A capacidade do dado estar disponível quando solicitado
+- Escalabilidade: Capacidade de um servidor aumentar sua capacidade computacional (memória, cpu, etc...)
+- Fonte da verdade: Base durável, contendo uma versão confiável dos dados
+- Cluster: Agrupamento de unidades computacionais
+- Shard: Partição/pedaço dos dados de um banco
+- Throughput: Capacidade de transmissão de dados
+
+O porquê do noSQL?
+- Casos de uso cada vez mais complexos
+- Clusters, cada vez mais comuns(advento da cloud)
+- Maiores quantidades de dados
+- Maiores throughputs de leitura/escrita necessários
+- Flexibilidade na estrutura de dados
+
+Famílias de banco de dados NoSQL
+
+- Chave valor
+    Riak | Tokyo Cabinet | Redis server | Memchached | Scalaris
+- Baseada em documentos
+    MongoDB | CouchDB | OrientDB | RavenDB
+- Baseada em colunas
+    BigTable | Cassandra | HBase | Hypertable
+- Baseada em grafos
+    Neo4J | InfoGrid | Infinite Graph | Flock DB
+
+MongoDB
+Porque usar?
+ - Esquema de dados flexivel
+ - Nativamente escalável
+ - Oferece um bom throughput
+ - Suporta operadores nativos para agregação de dados
+ - Suporta transações ACID parcialmente
+ - Documentação extensiva
+ - Integração testada com as principais linguagens
+ - Linguagem baseada em JavaScript
+
+ Conceitos
+  - A unidade básica é chamada de Documentos
+  - Documentos são armazenados em formato BSON (similar a JSON)
+  - Todo documento tem um identificador único
+  - Os documentos podem ter formatos/campos variados
+  - Documentos são agrupados em coleções (equivalentes a tabelas SQL)
+  - Nativamente "clusterizavel"
+
+Tipos de Escalabilidade
+- Horizontal
+    - Sharding, ou fragmentação, é a técnica de dividir o servidor de banco de dados, em partes, as quais serão totalmente responsáveis pela leitura/escrita de seus Dados
+    - Replicação Mestre/Escravo ou controlador/trabalhador, onde o nodo principal fica responsável pela escrita e replicação dos dados, e os nodos secundários, ficam responsáveis por processar as leituras
+    - Peer to Peer ou ponto a ponto, onde todos os nodos dividem a responsabilidade de gravar/ler todos os dados, além de replicar seus dados com os demais normalizados
+
+Cassandra DB
+Porque usar?
+ - Performance excelente na escrita de dados
+ - Banco cloud-native, provendo nativamente replicação em diversas zonas
+ - É possível tunar/customizar virtualmente todos os aspectos (consistência, disponibilidade, throughput de leitura/escrita)
+ - A arquitetura do banco é masterless, evitando pontos únicos de falha (SPOF's)
+ - Altamente disponível e tolerante a falhas
+ - Facilmente e nativamente horizontalmente escalável
+
+Conceitos
+ - Desenhado para suportar escritas em larga escala
+ - Utiliza CQL como linguagem de pesquisa (similar a SQL)
+ - Trabalha nativamente com consistência Eventually
+ - Trabalha com o conceito de chave primária
+ - Organiza os dados em tabelas
+ - Arquitetura em anel (masterless)
+ - Divide os dados nativamente pelos nodos
+
+Problemas de consistência
+- Tipos de conflito
+ - Escrita-Escrita: Quando dois ou mais usuários tentam alterar o mesmo ponto, simultâneamente
+ - Leitura-Escrita: Quando um usuáriuo obtém informações desatualizadas, devido a uma atualização concorrente (ex saldos)
+- Janelas de inconsistência: Basicamente a quantidade de tempo, em que um dado pode estar inconsistente (ex tempo de replicação)
+- Evitando inconsistências
+ - Transações atômicas: Atualizam todos os pontos dentro de uma transação em um único momento
+ - Abordagem pessimista: Impede que sejam feitas alterações no sistema através de locks mutuamente exclusivos
+ - Abordagem otimista: Deixa com que as escritas sejam feitas de forma concorrente, e ou resolve-as de forma automática, ou marca possíveis inconsistências
+
+Arquitetura Cassandra
+ - Os dados não são inicialmente deletados, apenas marcados como removidos
+ - Afeta a performance das queriesm quanto mais tombstones, mais filtering é feito
+ - Dependendo da frequencia de deleções, é mais interessante realizar soft deletes
+ - Os dados são eventualmente removidos
+
+ 
+
+
+
+
