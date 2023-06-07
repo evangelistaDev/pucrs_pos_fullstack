@@ -1,0 +1,111 @@
+Professor - Adriana Cássia Reis dos Santos
+
+Protocolo
+Conjunto de regras sobre o modo de como dará a comunicação entre as partes envolvidas
+
+HTTP
+O Hypertext Transfer Protocol significa Protocolo de Transferencia de Hypertexto
+É um protocolo de comunicação utilizado nas aplicações Web
+O HTTP funciona como um protocolo de requisição-resposta na arquitetura cliente-servidor
+
+URL's
+Um Uniform Resource Locator tem como objetivo identificar um recurso
+O esquema amplamente usado para acessar recursos na web é o HTTP
+
+Cliente-servidor
+Ao disponibilizar uma página na rede você estará compartilhando um recurso ou provendo serviços com várias outras pessoas
+Todos que desejam acessar o recurso/serviço fazem o papel de cliente
+Você que disponibiliza um recurso/serviço faz o papel de servidor
+
+Problemas do Modelo - Cliente servidor
+Visto que a capacidade de oferecer serviços ou recursos fica centralizada na figura do servidor, surge um problema, o que fazer quando o
+número de requisições dos clientes ultrapassa a capacidade computacional do servidor?
+
+Isso não tem uma resposta de alta eficiência para aplicações em redes de computadores. A sobrecarga de servidores é um problema real apesar de a capacidade dos servidores 
+ter aumentado consideravelmente na última década
+
+Redes P2P
+Surgem como uma proposta de descentralização do monopólio de processamento funcional.
+
+SOA - Service-Oriented-Architeture
+É um conjunto de funcionalidades bem definidas em forma de serviços disponibilizados através da rede
+Uma entidade pode assumir ambos os papeis (Servidor, cliente ou ambos) ao mesmo tempo, caracterizando a composição de serviços
+
+Benefícios do SOA
+Mais rapidez para entrada no mercado
+Manutenção eficiente
+Maior adaptabilidade
+
+Princípios da arquitetura orientada a serviços
+
+Interoperabilidade
+Acoplamento fraco - Menor dependência possível de recursos externos, devem ser stateless, sem guardar informações de sessões ou transações anteriores
+Abstração
+Granularidade
+
+Componentes do SOA
+Serviço
+Implementação do serviço
+Contrado de serviço
+Interface de serviço
+
+Provedor de serviços
+Consumidor de serviços
+Registro de serviços
+
+Limitações na implementação do SOA
+Escalabilidade limitada
+Aumento das interdependencias
+Ponto único de falha
+
+Microserviços
+A arquitetura de microsserviços é formada por componentes de software muito pequenos e completamente independentes, chamados de microsserviços,
+que se especializam e se concentram em uma única tarefa. Eles se comunicam por meio de API's, que são regras criadas pelos desenvolvedores para permitir que outros sistemas de sowftare se comuniquem com os microsserviços deles.
+O estilo de arquitetura dos microsserviços é mais adequado para ambientes modernos de computação em nuvem. Geralmente operam em containers.
+
+Benefícios dos microsserviços
+São escaláveis de maneira independente, rápidos, portáteis e independentes de plataforma.
+São desacoplados, que não dependem ou tem dependencia limitada de outros microsserviços.
+
+SOA em comparação com microsserviços
+Microsserviços é uima evolução da arquitetura SOA, abordando as deficiências do SOA para tornar o software mais compatível com ambientes corporativos baseados em nuvem.
+
+WebService
+Utilizado para transferir dados através de protocolos de comunica;áo para diferentes plataformas, independentemente das linguagens de programação utilizadas nessas plataformas.
+SOAP e REST
+Benefícios:
+- Integração de informação e sistemas
+- Reutilização de código
+- Redução do tempo de desenvolvimento
+- Maior segurança
+- Redução de custos
+
+MVC
+Model - Representar o negócio
+View - Representar a Interface
+Controller - Responsável por ligar a model e a View
+
+Node.JS
+Características
+- Multiplataforma
+- Multi-paradigma
+- Open Source
+- Escalável
+
+Express.js pode ser utilizado em micro-serviços
+
+Programação assíncrona
+Utilizada para evidar tempos de espera na execução de um programa
+Podemos utilizar em procedimentos independentes como: Leitura e escrita de um arquivo, Lógicas independentes que podem ser separadas da execução principal
+
+Microsserviços
+Características
+- Autônomos
+- Especializados
+Benefícios
+- Agilizade
+- Escalabilidade Flexível
+- Fácil implantação
+- Liberdade tecnológica
+- Código reutilizável
+- Resiliência

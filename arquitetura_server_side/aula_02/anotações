@@ -1,0 +1,25 @@
+SEO (Search Engine Optimization)
+
+SPA (Single Page Aplications)
+Vantagens
+- Melhor indexação
+- Menor exigência da máquina do cliente
+- Melhor performance da aplicação
+
+SSR (Server Side Rendering)
+Inverte o processo de renderização, trazendo uma parte do esforço de renderização de aplicações SPA para o servidor
+
+React JS
+Framework JavaScript criado pela Meta utilizado para criar interfaces de usuário em aplicativos web.
+React Native utilizado para criação de aplicações móveis
+
+DOM e Virtual DOM
+Document Object Model, é uma representação em árvore de um documento HTML ou XML. É usado pelo navegador para entender o conteúdo de uma página web e permitir que o usuário interaja com ela.
+O problema é que o DOM pode ser lento para atualizar e manipular. Qualquer alteração nos dados requer uma atualização completa do DOM.
+Virtual DOM é a uma representação em memória do DOM que é atualizada muito mais rapidamented do que o DOM real.
+
+Redux
+Biblioteca para armazenamento de estados de aplicações em JavaScript
+Store
+Actions
+Reducers
