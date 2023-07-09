@@ -1,0 +1,127 @@
+O principais desafios de segurança
+- Identificação dos riscos de segurança e vulnerabilidades
+ - Analisar as Ameaças -> Comprometimento de credencial de usuários
+ - Identificar Ativos -> Tabela de usuários
+ - Avalie as vulnerabilidades -> Senhas fracas ou fáceis de advinhar
+ - Avalie o Impacto > Financeiro, imagem
+ - Classifique os riscos -> Probabilidade: Média / Impacto: alto
+ - Plano de mitigação -> Incluir 2FA, Treinar usuários 
+ - Monitoramento -> Análise regular dos logs do servidor
+- Gerenciamento de vulnerabilidades e riscos
+ - Responsável
+ - Testes Regulares
+ - Acompanhar as mudanças
+ - Treinamento
+- Integração da segurança no Processo
+ - Quando
+ - Desenvolvimento
+ - Como
+- Treinamento e conscientização dos desenvolvedores
+ - Treinamentos
+ - Materiais
+ - Revisão conjunta de código
+ - Checklist
+  - Validação de Entrada
+  - Gerenciamento de Sessão
+  - Proteção contra Injeção de código
+  - Gerenciamento de Senhas
+  - Configuração de servidor
+  - Controle de acesso
+  - Proteção de Dados
+ - Recompensas
+
+O ciclo de vida do Desenvolvimento de software seguro
+ - Planejamento e definição de requisitos de segurança
+ - Projeto e implementação de seguros
+  - STRIDE
+        Spoofing - Falsificação de indentidade
+        Tampering - Violação ou adulteração
+        Repudiation - Negação de ter realizado uma ação
+        Information Disclousure - Divulgação ou vazamento
+        Deny of Service - Negação de serviço
+        Elevation os Privilege - Aumento indevido de privilégios
+ - Testes de segurança e avaliação de vulnerabilidades
+  - Teste de invasão
+  - Análise de vulnerabilidades
+ - Implantação e manutenção seguras
+  - Configuração de Servidor
+  - Autenticação e Autorização
+  - Monitoramento
+
+Métodos e ferramentas de segurança utilizados
+ - Análise de código estática e dinâmica
+  - SAST - Análise de código fonte
+   - SonarQube
+   - Veracode
+   - ESLint
+   - PMD
+   - FindBugs
+  - DAST - Execução da aplicação
+   - Burp Suite
+   - OWASP ZAP
+   - Acunetix
+   - Qualys
+   - IBM AppScan
+ - Teste de invasão e avaliação de vulnerabilidades
+  - Blackbox - QA Testers
+  - Whitebox - Developers
+ - Gerenciamento de configuração segurança
+ - Autenticação e autorização seguras
+  - Protocolos - OAuth, OpenID Connect e JWT
+  - SSO (Single Sign-On) 
+  - Multi-fator - SMS, Google Authenticator
+  - Permissões
+  - Monitorar
+  - Atualização
+ - Criptografia e gerenciamento de chaves
+  - HashiCorp Vault
+  - AWS Key Management Service - KMS
+  - Microsoft Azure Key Vault
+  - Google Cloud Key Management Service - KMS
+ - Monitoramento e detecçáo de incidentes
+  - Planejamento
+  - Coleta de Dados
+  - Correlação
+  - Notificação
+  - Investigar e Responder
+
+Problemas Comuns de Segurança Indicados pela OWASP
+ - OWASP (Open Web Application Security Project)
+  - Voluntariado
+  - Foco em Segurança
+  - Global
+  - Aberta e Transparente
+ - OWASP Top 10
+  - 1 Quebra de Controle de acesso
+  - 2 Falhas criptográficas
+  - 3 Injeção
+  - 4 Design inseguro
+  - 5 Configuração de segurança incorreta
+  - 6 Componentes vulneráveis e desatualizados
+  - 7 Falhas na identificação e Autenticação
+  - 8 Falhas na integridade de software e dados
+  - 9 Falhas no registro e monitoramento de segurança
+  - 10 Falsificação de solicitação do lado do servidor
+
+Autenticação e Autorização
+ - O que é Autenticação: O processo de verificar a identidade de um usuário ou sistema
+  - Senha, Smartcards, Biometria
+ - O que é Autorização: Conceder ou negar permissões de acesso a recursos
+  - Controle de acesso, Granularidade, flexibilidade
+ - Métodos de Autenticação
+  - Validação de identidade
+   - Maneira de saber se a pessoa que está tentando acessar determinadas informações ou recursos é realmente a pessoa autorizada
+     Saber: Senhas, Perguntas e respostas secretas, Códigos PIN...
+     Possuir: Cartões inteligentes, Tokens de segurança, Chaves de segurança, Celulares, Smartwatches
+     Ser: Voz, Assinatura, Reconhecimento facial, Padrão de digitação
+  - MFA Adaptativo (Multifator de Autenticação Adaptativo)
+  - Passwordless
+   - Abordagem de autenticação que permite aos usuários acessar uma conta sem a necessidade de inserir uma senha
+   - Autenticação por biometria
+ - Implementação
+  - Sistema de Gerenciamento de usuários
+   - LDAP (Active Directory | Open LDAP)
+   -  
+ 
+
+

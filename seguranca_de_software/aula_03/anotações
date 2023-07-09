@@ -1,0 +1,53 @@
+Professor - Avelino Francisco Zorzo
+
+Contexto atual e Segurança
+ - 1 Privacidade: sem vazar dados confidenciais
+ - 2 Autenticação: sem se passar por outro
+ - 3 Integridade: sem alteração
+ - 4 Não-repúdio: não ser capaz de negar
+
+Criptografia
+ - Terminologia
+  - Comunicação segura - receptor e remetente
+  - Mensagens e cifras - cifrar/decifrar
+ 
+ - Criptografia Simétrica
+  - Cifra de blocos
+  - AES de 256 bits é mais utilizado
+  - Escalonamento da chave
+  - Cifra de Raidel
+   - Substituição de bytes
+   - Deslocamento de linhas
+   - Mistura das colunas
+   - Soma da chave da rodada
+  - Modo de operação
+   - Define como uma cifra de bloco é aplicada para cifrar uma mensagem
+   - Exemplos:
+    - Eletronic code book mode (ECB)
+     - Modo de operação mais simples
+     - Operação determinística
+      - mesmo bloco de texto claro na entrada gera a mesma saída
+    - Cipher Block Chaining mode (CBC)
+     - Um dos modos mais utilizados
+     - Devido ao vetor de inicialização aleatório, a mesma mensagem de entrada pode gerar diferentes saídas
+     - Se um bloco de texto claro mudar, então doso os blocos do texto cifrado subsequentes serão afetados
+     - Cifrar não pode ser paralelizada
+    - Cipher feedback mode (CFB)
+     - Cifra de bloco -> cifra de fluxo
+     - Somente a operação de cifrar é usada
+     - Não é possível decifrar paralelamente
+    - Output feedback mode (OFB)
+     - Essencialmente é uma cifra de fluxo
+     - As operações de cifrar e decifrar são exatamente as mesmas
+    - Counter mode (CTR)
+     - Se tornando muito popular
+     - Assim como o OFB, CTR é essencialmente uma cifra de fluxo
+     - As operações de cifrar e decifrar são as mesmas
+     - É possível paralelizar as duas operações, grande vantagem sobre o CBC
+   - Padding - Preenchimento
+ 
+ - Criptografia Assimétrica
+  - Aritmética Modular
+  - Protocolo Diffie-Hellman
+  - Criptografia RSA
+

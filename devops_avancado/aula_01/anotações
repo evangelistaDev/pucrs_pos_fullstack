@@ -1,0 +1,37 @@
+Professor - Cassio Trindade
+
+O que é?
+Cultura de entrega contínua de produtos digitais, com vcalor que combina ares de desenvolvimento e operações. Que faz uso das melhores metodologias, práticas e ferramentas da àrea de TI
+
+Principais práticas
+Integração contínua - CI
+Distribuição/implantação contínua - CD
+Virtualização (IaaS) e containers
+Infraestrutura como código
+Gerenciamento de configuração
+Comunicação e colaboração
+
+Planejamento
+
+Primeiro estágio do DevOps
+Metas e Objetivos
+ - Levantamento das dificuldades
+ - Definição do objetivo
+ - Definição de metas
+Equipe Multidisciplinar
+ - Integração e treinamento
+Método / ferramentas
+ - Scrum, Kanban e XP
+ - Git, AWS, Azure, Jenkins etc...
+
+Build/Construção
+Nesta fase, são realizadas as etapas integração, construção, versionamento, qualidade e compilação do código-fonte produzido.
+Quando há quebra no Build devido a problema neste processo, todos os envolvidos devem ser informados e os responsáveis efetuar as correções e disponibilizar o código na esteira novamente
+
+CI/CD - Continuous Integration - Continuous Deploy
+É a prática de automatizar o build, teste e o deploy, de todos os componentes "continuamente"
+
+Cypress - ferramente de teste de front-end
+
+
+

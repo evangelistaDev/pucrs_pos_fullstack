@@ -1,0 +1,109 @@
+Professor - Moises Brandalise
+
+Introdução
+Por que é importante:
+- Fim dos limites físicos
+- Migração dos serviços em núvem
+    - Repositórios abertos
+- SQL injection diminuiu
+    - Information disclousre aumentou
+- Valor do Dado depois da LGPD
+    - Segurança by Design
+- Treinamentos
+    - Poderes diferentes dentro da infra
+
+Principais Ameaças
+- Ataques Hackers
+- Vazamento de Dados
+- Ataque de Phishing
+- Malware
+
+Principais Organizações na Definição de Padrões de Segurança
+- ISO - Organização Internacional de Normalização
+- W3C - Consórcio World Wide Web
+- OWASP - Open Web Application segurity Protect
+- NIST - National Institute of Standards and Technology
+- IETF - Internet Engineering Task Force
+- PCI SSC - Payment Card Industry Security Standards Council
+
+Métodos de Criptografia
+- O que é Criptografia e como ela funciona
+ - Importante para garantir a privacidade e a integridade de informações pessoais e sensíveis
+ - Transformar informações legíveis em um formato inteligível para protegê-las contra acesso não autorizado
+ - Algorítmos matemáticos complexos que transformam o texto original em um formato criptografado
+
+- Como funciona
+ - Chaves criptográficas: Usa chaves para codificar e decodificar informações. É um valor secreto que é usado para transformar a informação
+ - Cifras Simétricas usam a mesma chave para criptografar e descriptografar dados, as Assimétricas usam um par de chaves diferentes: pública e privada
+ - Reversão: É a dificuldade ou impossibilidade de reversão de um dado que foi criptografado
+
+- Onde é usado
+ - Proteção
+ - Integridade dos dados
+
+- Tipos de Criptografia
+ - Simétrica
+  - Velocidade: Mais rápida que a assimétrica, pois não utiliza operações matemáticas com alto custo computacional
+  - Segurança: Depende de proteção adequada da chave secreta compartilhada. Se a chave for comprometida a segurança pode ser comprometida
+  - Uso: Transações financeiras, comunicações militares e segurança de rede
+ - Assimétrica
+  - Duas Chaves: utiliza um par de chaves: privada e pública
+  - Chave púlica: distribuida livremente e amplamente conhecida. Usada para criptografar os dados enviados
+  - Chave privada: é mantida em segredo pelo proprietário da chave e é usada para descriptografar os dados recebidos
+  - Certificados Digitais são usados para autenticar e proteger as comunicações eletrônicas
+   - Oferecem maior segurança que a criptografia simétrica, pois mesmo que a chave pública vaze, a privada permanece em posse do proprietário
+   - Permite que o destinatário verifique se os dados recebidos são provenientes do remetente esperado
+   - Permite a criação de assinaturas digitais, que são uma forma de verificar a autenticidade e int
+ - Funções Hash
+  - É uma forma de criptografia que usa um algoritmo matemático para transformar uma mensagem em uma string de caracteres fixa
+    - Usadas principalmente para verificar a integridade dos dados
+
+- Como utilizar criptografia para armazenamento e transmissão de dados
+ - Implementação correta
+    - Em Repouso - Dados em disco rígido ou em banco de dados
+    - Em Movimento - HTTPS, SSL/TLS e VPN's
+ - Gerenciamento de Chaves
+ - Prevenção de ataques 
+    - Salting - Processo de criptografia que adiciona aleatoriamente uma sequencia de caracteres exclusiva, conhecida como salt
+    - Hashing - Processo matemático que converte um bloco de dadosa em um valor de comprimento fixo
+ - Teste e auditoria
+
+- Padrões de criptografia
+ - AES (Advanced Encryption Standard)
+  - Velocidade
+  - Ampla utilização
+ - RSA (Rivest-Shamir-Adleman)
+  - Utilização de chaves públicas e privadas
+  - Versátil
+ - SHA (Secure Hash Algorithm)
+  - Resistência a colisões
+  - Não reversabilidade
+
+Protocolos de Comunicação Segura
+ - Modelo Referencial OSI
+  - 7 Camadas do modelo OSI
+   7 Aplicação - Interfaces com aplicativos
+   6 Apresentação - Formatos / Criptografia
+   5 Sessão - Controle de Sessões entre Aplicativos
+   4 Transporte - Conexão entre hosts / Portas
+   3 Rede - Endereço lógico / Roteadores
+   2 Enlace - Endereço físico / Pontes e Switches
+   1 Hardware - Hardware / Sinal elétrico / bits
+ - Principais Protocolos
+  - TCP/IP (Transmission Control Protocol/Internet Protocol)
+   - Confiabilidade
+   - Interoperabilidade
+  - HTTP/HTTPS (Hypertext Transfer Protocol/HTTP Secure)
+   - Servidor Web
+   - Segurança
+  - FTP/FTPS (File transfer Protocol)
+   - Protocolo não seguro
+   - Autenticação de usuário e senha
+  - SMTP (Simple Mail Transfer Protocol)
+   - Troca de email
+  - DNS (Domain Name System)
+   - Tradução de nomes de domínio ao invés de endereços IP
+  - LIBSIGNAL (criptografia de ponta a ponta)
+   -  Protocolo de criptografia de ponta a ponta, utilizado em aplicativos de mensagens criptografadas como Signal, Whatsapp e Facebook Messenger
+   - https://signal.org/docs
+

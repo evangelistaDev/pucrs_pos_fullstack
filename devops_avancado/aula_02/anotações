@@ -1,0 +1,3 @@
+Containers
+Proporcionam uma maneira padrão de empacotar código, configurações e dependências de seu aplicativo em um único objeto.
+Eles compartilham um sistema operacional instalado no servidor e são executados como processos isolados de recursos
