@@ -1,0 +1,74 @@
+Professor - Andrea Konzen
+
+- Métodos HTTP:
+  - GET: Baixa um recurso do servidor
+  - POST: Envia um recurso ao servidor / cria um recurso no servidor
+  - PUT: Atualiza um recurso no servidor
+  - DELETE: Remove um recurso do servidor
+  - PATCH: Atualiza um recurso parcialmente no servidor
+  - HEAD, OPTIONS, TRACE e CONNECT: Outros para uso mais específico
+
+- Códigos de Status
+ - 100 - 199: Informação
+ - 200 - 299: Sucesso
+ - 300 - 399: Redirecionamento
+ - 400 - 499: Erro do cliente
+ - 500 - 599: Erro do servidor
+
+- MIME - Multipurpose Internet Mail Extensions
+  - Define o tipo de arquivo sendo transmitidos
+  - Formado por 2 componentes: tipo/subtipo
+  - Exemplos: text/plain, text/html, text/javascript, text/CSS
+            image/jpeg, image/gif, image/png
+            video/mpeg, video/mp4
+            audio/mpeg, audio/wav
+            application/octet-stream, application/pdf
+
+- PWA
+  - Service Worker
+   - Arquivo JavaScript que é registrado pela página
+   - Adiciona funções de tratamento de eventos:
+    - install, activate, fetch
+   - Funciona como um proxy para requisições
+   - Pòdem ser complexos quando proveem funcionalidades avançadas 
+
+   - LightHouse - Ferramenta do chrome
+
+- Aplicações Responsivas
+  - WAI - Acessibilidade
+  - Abordagem Mobile-First
+  - CSS Responsivo - Media Queries
+
+- Tema escuro
+ - @media (prefers-color-scheme: light){...}
+ - @media (prefers-color-scheme: dark){...}
+
+- Animação
+ Exemplo CSS
+  .com-animacao {
+    display: block;
+  }
+
+  .sem-animacao {
+    display: none;
+  }
+
+  svg {
+    width: 20 rem;
+    height: 20 rem;
+    animation: rotacao 2s infinite linear;
+  }
+
+  @keyframes rotacao {
+    from {
+        transform: rotate (0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+  }
+
+ - ARIA - Accessible Rich Internet Applications
+
+
+

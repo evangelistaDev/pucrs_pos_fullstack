@@ -1,0 +1,42 @@
+Experimento
+- Um experimento é um teste, uma tentativa ou um procedimento de validação
+
+MVP
+- Um produto mínimo viável (MVP) é a versão mais simples de um produto que pode ser disponibilizado aos usuários para validar uma ideia de negócio 
+
+Lean Inception
+- É o nome dado ao workshop colaborativo para alinhar um grupo de pessoas sobre o produto mínimo viável a ser construído
+- É a combinação eficaz do Design Thinking e do Lean Startups
+- Design Thinking é uma abordagem centrada nas pessoas para a concepção de soluções inovadoras que combina processos criativos para a resolução de problemas de forma colaborativa
+- Lean Startup é uma abordagem de criação de produtos e serviços.
+
+Porque fazer uma Lean Inception?
+- Grandes Projetos
+ - Consideram um início enxuto valioso para começar rapidamente e serem orientados para trabalhar em um estilo ágil
+- Startups
+ - Usam princípios enxutos para levar uma ideia que foi testada por alguns MVPs pré-software e desenvolvê-la em um produto de software
+
+Quem participa da Lean Inception
+- Todas as pessoas interessadas no produto
+
+Agenda de Lean Inception
+ - SEG: Kick Off / Visão do produto | Is - Is Not Does / Does Not Do
+ - TER: Persona | Jornada do Usuário
+ - QUA: Funcionalidades Brainstorm | Tech, UX, Revisão do Negócio
+ - QUI: Jornadas e Funcionalidades | Sequenciador
+ - SEX: MVP Canvas | ShowCase
+
+ Visão do Produto
+  - A Visão do Produto provê um alinhamento entre todos os envolvidos no projeto, desde os clientes e demais partes interessadas até o Time, sobre o que deve ser alcançado
+  - A Visão do Produto deve ser de fácil compreensão contendo apenas o necessário e suficiente
+  - A Visão do Produto é estabelecida antes que o desenvolvimento do produto se inicie e, de forma geral, permanece estável durante todo o projeto
+  - Ela é criada, gerenciada e compartilhada pelo Product Owner, que garante que o Product Backlog esteja sempre alinhado com ela
+
+É-Não É - Faz Não Faz
+ - Dinamica para que seja escrito em cada parte de uma folha o que o produto faz, não faz, é e não é por Exemplo
+
+Personas
+ - Para identificar as funcionalidades de um sistema, é importante ter em mente os usuários e seus objetivos
+ - Uma persona pode representar um usuário do sistema, descrevendo não só o seu papel, mas também suas necessidades específicas
+ - Esta representação realística de usuários, ajuda o time a descrever funcionalidades do ponto de vista de quem interagirá com o produto final
+

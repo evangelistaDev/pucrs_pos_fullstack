@@ -1,0 +1,43 @@
+Produto Mínimo Viável - MVP
+- É um conceito da startup enxuta que enfatiza o impacto di aprendizado no desenvolvimento de novos produtos
+- O principal benefício é a possibilidade de entender o mais cedo possível o interesse do cliente pela entrega, sem desenvolve-la completamente.
+
+Melhoria Contínua
+Kaizen
+- A gestão enxuta trabalha constantemente na redução de 3 tipos de desperdício:
+ - Muda: 7 principais desperdícios de processo
+ - Mura: Desníveis ou inconsistências nos processos, impossibilitando o fluxo contínuo
+ - Muri: Atribuição de muito trabalho a uma equipe, aumentando o estresse tanto nela quanto no processo
+
+PDCA
+ - Plan: Estabelecer objetivos (Planejar)
+ - Do: Executar o planejamento da fase anterior
+ - Check: Comparar os resultados da execução (Avaliar)
+ - Act: Atuar imediatamente após a análise dos resultados da fase Check.
+
+RCA - Root Cause Analysis
+- Técnica praticada na gestão Lean que permite alcançar o Kaizen mostrando as causas-raiz de quaisquer problemas identificados;
+
+Sistema Pull
+ - Constrói soluções baseadas em demanda real
+ - Favorece a eliminação das atividades sem valor para o cliente e dos desperdícios
+ - Otimiza recursos e reduz a possibilidade de gargalos que impeçam a fluidez do fluxo de valor
+ - Permite entregas just in time
+
+Just in time
+ - Takt time: é a frequência em que uma parte do trabalho é produzida para atender demandas 
+ - Continuous Flow: significa produzir e mover um item de cada vez para cumprir o Takt Time, evitando gargalos entre as etapas dos processos.
+ - Pull System: significa permitir que o cliente ou a próxima etapa do processo, “puxem” apenas a entrega necessária - de acordo com a cadência combinada.
+
+Kanban
+ - É um sistema pull de gestão visual que facilita a identificação de desperdícios, inconsistências e desbalanceamentos em fluxos de valor, através do uso de 6 práticas:
+  - Visualização do fluxo de trabalho
+  - Eliminação das interrupções
+  - Gerenciamento do fluxo (ritmo)
+  - Publicação de regras e processos
+  - Adoção de ciclos de feedback constantes
+  - Colaboração para melhoria do fluxo todo
+
+  Backlog -> Analisar -> Revisar -> Construir -> Integrar e Testar -> Aceito
+
+

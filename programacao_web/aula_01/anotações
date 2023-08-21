@@ -1,0 +1,112 @@
+Professor - Andrea Konzen
+Aula 01
+
+- Internet e Protocolos de Transporte e Aplicação
+  - Evolução da Internet
+   - Web 1.0 - Estática
+    - Produção ficava a cargo de provedores da Internet
+    - A Internet ainda copiava os modelos de distribuição de informações como o rádio e a televisão
+   - Web 2.0 - Interativa
+    - Início da produção de conteúdo
+    - Volume de dados gerados diariamente deu um salto muito grande
+   - Web 3.0 - Interativa inteligente
+    - Uso da inteligência artificial
+    - criação de experiência personalizada e interativa
+    - segurança de dados
+    - criptografia, proporcionando aos usuários controle sobre os próprios dados
+
+- Arquitetura Web e Características das aplicações Web
+ - Arquitetura Web
+  - Conjunto de padrões, princípios, técnicas e boas práticas utilizados para projetar e desenvolver sistemas e aplicações web.
+  - Responsável por definir a estrutura, componentes da aplicação, regras e protocolos de Comunicação
+  - Características importantes:
+   - Escalabilidade - ser capaz de lidar com grande volume de tráfego
+   - Flexibilidade - ser flexível o suficiente para acomodar mudanças e atualizações futuras
+   - Segurança
+   - Performance - Uso de cache, otimização de consultas ao banco de dados, otimização de imagens e arquivos estáticos
+  - Arquiteturas mais comuns:
+   - Três camadas - Client Server
+    - Camada de apresentação - FrontEnd
+     - Interface do usuário e como ele vai interagir
+     - HTML, CSS e JavaScript
+     - Solicita informações da camada de negócios e exibe os resultados ao usuário
+    - Camada de Negócios - BackEnd
+     - Lógica de negócio da aplicação
+     - Recebe solicitações da camada de apresentação, processa e retorna a resposta
+     - PHP, Java, Python
+    - Camada de Dados - Banco de Dados
+     - Armazena e recupera os dados da aplicação
+     - MySQL ou Oracle
+   - Orientada a serviços - SOA
+    - Divide a aplicação em serviços independentes, que podem ser acessados por outros serviços ou aplicativos
+    - Cada serviço é responsável por uma tarefa específica, e pode ser atualizado ou substituído sem afetar outros serviços
+    - Interoperabilidade
+   - Microsserviços
+    - Cada microsserviço é responsável por uma funcionalidade específica e pode ser escalado independentemente
+    - Diferentes equipes de desenvolvimento trabalhem em diferentes serviços independentes
+    - permite maior tolerância a falhas
+    - Pode ser desenvolvido em liguagens diferentes
+    - Complexidade na orquestração
+
+- Aplicações Web
+ - Dimensão estrutural
+ - Dimensão navegacional
+ - Dimensão de apresentação
+
+- Visão geral sobre Protocolos
+ - Um protocolo é uma convenção que controla e possibilita conexão, comunicação, transferência de dados entre dois sistemas computacionais
+ - As regras que governam a sintaxe, semântica e sincronização da comunicação
+ - Cada pacote carrega em si informações de origem e destino
+ - Sintaxe: representa o formato dos dados
+ - Semântica: Significado de cada conjunto sintático que dá sentido à mensagem enviada
+ - Timing: Define uma velocidade aceitável de transmissão dos pacotes
+ - Protocolos: TCP/IP, HTTP/HTTPS, FTP, DNS, SMTP/POP3/IMAP, ICMP
+ - TPC/IP: Usado para transmitir dados entre dispositivos em removendo, divide os dados em pacotes e os envia de um dispositivo para o outro
+ - HTTP/HTTPS: Usado para transferir dados da Web entre um servidor e um navegador
+ - FTP: Transferência de arquivos
+ - DNS: Resolver nomes de domínios em IP's
+ - SMTP/POP3/IMAP: Envio e recebimento de emails
+
+- Protocolos de Transporte
+  - Os protocolos utilizados nesta camada são TCP e UDP
+  - Garante a confiabilidade dos dados transmitidos e recebidos
+- Protocolos de Aplicação
+  - É composto por uma variedade de protocolos: HTTP, FTP, SMTP, DNS, SSH, TLS entre outros
+  - Responsável pela comunicação entre aplicativos em diferentes dispositivos de rede
+  - Define formatos de mensagens e regras de comunicação
+
+- FrontEnd e BackEnd
+ - FrontEnd: Parte de um sistema web ou aplicativo que usuário interage diretamente, é responsável pela apresentação visual e interação com o usuário
+ - HTML, CSS, Javascript e outros frameworks
+ - HTML utilizada na estrutura básica do sistema web ou aplicativo
+ - CSS utilizado para definir o estilo visual do sistema web ou aplicativos
+ - JavaScript é uma liguagem de programação usada para criar interatividade na interface do usuário
+ - BackEnd: Parte de um sistema web que cuida da lógica de negócio, armazenamento de dados e a segurança
+
+- Tipos de Sistemas Web: SPA, MPA e PWA
+ - SPA: Single Page Application
+  - É um modelo de desenvolvimento de aplicações web que consiste em um única página web que se atualiza dinamicamente
+  - Se carrega todo o conteúdo necessário em uma única página
+  - O carregamento é feito de forma assíncrona através de chamadas AJAX o que evita a necessidade de recarregar a página inteira a cada interação do usuário
+  - Utilizado em plataformas de e-commerce, aplicativos de redes sociais etc...
+  - Porque escolher SPA?
+   - Experiência de usuário mais fluida e rápida
+   - Redução da carga do servidor
+   - Melhor escalabilidade e manutenibilidade
+   - Maior interatividade e personalização
+   - Velocidade
+   - Melhor experiência com o usuário
+   - Desenvolvimento mais fácil
+   - Arquitetura Modular
+   - Acesso off-line
+   - Maior segurança
+   - Fácil Manutenção
+  - Arquitetura SPA
+   - View
+   - Model
+   - Controller
+   - Services
+   - Routing
+   - States
+ - MPA: Multi Page Application
+ - PWA: Progressive WebApps
