@@ -1,0 +1,68 @@
+Professor - Júlio Henrique Araújo Pereira Machado
+- Opções para desenvolvimento na nuvem
+ - CodeSandbox
+ - StackBlitz
+ - Replit
+- Opções para implantação na nuvem
+ - Vercel
+ - Netfly
+
+React
+- Ferramentas de construção
+- Componentes
+- JSX
+- Hooks
+- Consumo de APIs REST
+- Formulários
+
+https://react.dev
+
+Ferramentas para configuração inicial de um projeto:
+Create React App - https://create-react-app.dev
+Vite https://vitejs.dev
+
+Componentes
+ - Uma interface de usuário com React é uma composição de componentes
+ - Um componente é formado por:
+  - Marcações (HTML + CSS)
+  - Código JavaScript
+ Componentes === Máquina de Estados
+  - React utiliza o modelo mental de máquina de estados para a IU
+  - Atualiza-se o estado de um componente e o React renderiza a IU com base nesse estado
+  - React possui controles internos para atualizar o DOM de forma eficiente
+ Componentes === Funções
+  - Componentes podem ser criados com base em funções (modelo mais atual)
+  - Existe um suporte legado ao modelo com base em classes
+  - Chamamos de "renderização" o processo de chamar um componente funcional do React
+  - Quando é renderizado, ele retorna uma árvore contendo descrições de componentes que serão eventualmente traduzidos para nodos na árvore DOM no navegador
+  - O método render() é o responsável por criar a árvore de componentes, inicializar a biblioteca React e anexar os nodos DOM gerados como filhos de um nodo DOM pai
+ JSX
+  - É uma extensão sintática para JavaScript que permite escrever marcações no estilo do HTML dentro de um script de código
+  - Possui regras sintáticas mais restritas que o HTML
+  - Suporta interpolação de expressões JavaScript via {}
+
+  Hooks
+   - React fornece uma coleção variada de hooks que são funções especiais disponíveis na fase de renderização de um componente
+   useState
+   useReducer
+   useEffect
+   useRef
+
+  Frameworks
+   - Next.js 
+   - Gatsby
+   - Remix
+
+   Next.js
+    - Framework Full-Stack para o desenvolvimento de aplicações web com base em componentes React
+    Fornece:
+        - Roteamento
+        - Renderização no lado cliente e no lado servidor
+        - Gerenciamento de acesso a dados
+        - Suporte a processamento de CSS
+        - Otimização de conteúdo
+        - Streaming de HTML dinâmico
+        - Componentes no lado do servidor
+        - Código de middleware
+        -  
+    - npx create-next-app@latest aplicacao

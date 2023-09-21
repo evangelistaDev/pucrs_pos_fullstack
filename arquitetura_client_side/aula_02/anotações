@@ -1,0 +1,84 @@
+Serviços
+ - Grande parte do contexto da arquitetura client-side lida com serviços ou micro serviços
+
+Micro Serviços
+ - É uma abordagem arquitetural para o desenvolvimento de software, na qual uma aplicação é dividida em componentes independentes, isolado.
+ - Permitem maior produtividade do time, manutenibilidade, melhores testes, agilidade na implantação dentre outros benefícios
+
+Equipes Multifuncionais
+ - Utilizar o DDD - Domain Driven Design
+  - Domínio - Problema a ser resolvido pelo software
+  - Domínios são dividídos em sub-domínios que refletem a estrutura das organizações
+  - Dividir o time para ser responsável por completo do sub-domínio pode ser uma boa prática
+ - Auxilia nas estratégias de migração dos monolitos para micro-serviços 
+
+BFF - Backend for Frontend
+ - Tem um propósito único por natureza
+ - Desenvolvido para uma interface de usuário espefícica
+ - Melhora a experiência e otimiza a troca de dados
+
+GraphQL
+ - Se apresenta como uma solução mais sofisticada que o BFF para atender diversos dispositivos e interfaces
+ - É uma linguagem de consulta que permite que os clientes executem queries como parâmetro da chamada do serviço para acessar ou modificar dados espefícicos e sob demanda
+
+Vantagens dos Micro Serviços
+ - Heterogeneidade de Tecnologia
+ - Equipes independentes e focadas
+ - Robustez
+ - Escalabilidade
+ - Facilidade de implantação
+ - Alinhamento organizacional
+ - Composição
+
+Micro FrontEnds
+ - É um estilo arquitetural que trata de dividir interfaces grandes em pedaços menores e mais gerenciaveis com fronteiras entre eles
+ - O termo estende o conceito de micro serviços ao Frontend
+
+ - Abordagem Horizontal x Vertical
+
+Vantagens dos Micro FrontEnds
+ - Otimizar o tempo de entrega de um recurso ao clientes
+ - Times autônomos e interdisciplinares (CrossFunctions)
+ - Organizações mais escaláveis
+ - Bases de código menores, mais coesas e sustentáveis
+ - A capacidade de atualizar ou reescrever partes do frontend de maneira mais incremental
+ - Estratégias de testes A/B ou Blue-Green
+
+ App Shell
+  - É uma estrutura de organização do aplicativo web, usualmente uma SPA de nível mais alto, que organiza o acesso a um API Gateway ou BFFs, abstraindo o conhecimento do usuário da aplicação, encapsulando o acesso a microfrontends
+
+https://demo.microfrontends.com/
+https://github.com/micro-frontends-demo
+
+Requisitos Arquiteturais
+ - É aquele que afeta a arquitetura do software
+ - Ajudam a criar interfaces de forma sólida e de fácil manutenção
+
+Requisitos
+ - Separando responsabilidades
+ - Componentização
+ - Gerenciamento de Estado
+ - Performance
+  - httparquive.org
+  - webpagetest.org
+  - Lighthouse do DevTools do Chrome
+ - Acessibilidade
+ - Responsividade
+  - Media queries
+  - Viewport
+
+Tendências
+ - Low Code
+  - OutSystems
+  - Microsoft PowerApps
+  - AWS Honey Code
+ - Inteligência Artificial
+  - Chatbots
+   - Twilio e TakeBlip
+ - LLMs - Large Language Models
+  - ChatGPT
+  - CoPilot - Assistente do GitHub
+  - CodeWhisperer
+
+
+

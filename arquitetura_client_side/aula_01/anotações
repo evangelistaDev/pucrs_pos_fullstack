@@ -1,0 +1,123 @@
+Professor - André Luiz Pereira
+
+Arquitetura Client-Side
+
+Introdução
+ - Arquiteturas Modernas
+  - Frontend - Páginas Web / Aplicativos Móveis
+  - Middlewares - Protocolos de Rede / Redes
+  - Backend - Serviços / Servidores
+
+ - Nexus das Forças
+  - Mobilidade
+  - Redes Sociais
+  - Informação
+  - Cloud Computação na Núvem
+  - Internet das Coisas
+ 
+ - 3ª Plataforma
+  - Sistemas distribuídos
+   - Um sistema distribuído é um conjunto de dispositivos e/ou serviços que independentes se apresentam a seus usuários, programas ou outros serviços
+     como um sistema único e coerente utilizando-se de um sistema de conexão.
+
+ - Arquitetura de Software 
+  - A arquitetura de software é uma disciplina da engenharia de software que tem por objetivo suportar a tomada das decisões técnicas
+
+  - Elementos da Arquitetura de Software
+   - Princípios de Design
+   - Requisitos Arquiteturais
+   - Estilos Arquiteturais
+   - Padrões Arquiteturais
+ 
+  - Dispositivos 
+   - Desktop e Notebooks
+   - Celular e Tablets
+   - Assistentes virtuais
+   - Consoles
+   - Wearables
+   - IoT 
+
+  - Plataformas
+   - Android e iOS 
+   - Linux e Windows
+   - Browsers
+   - Mensageria
+
+  - Design System
+   - Envolve todo o contexto de estilos, padrões, componentes, ferramentas e bibliotecas  que devem auxiliar equipes a projetar e construir um produto.
+   - Mantêm um padrão visual baseado nas melhores práticas de UX/UI
+   - Ex. Material Design
+
+ - URI - Uniform Resource Identifier
+  - Padrão para o endereçamento de recursos disponíveis na web que engloba conceitos de tipos de URI
+   - URL - Uniform Resource Locator
+   - URN - Uniform Resource Name
+
+ - CDN - Content Delivery Network
+ 
+ - Protocolos
+  - HTTP
+  - HTTPS
+
+ - Tecnologias Web
+  - Protocolo OpenGraph 
+  - HTML
+  - JavaScript
+  - SEO - Search Engine Optimization
+   - Google Search Console
+  - CSS 
+   - Boas Práticas
+    - Prefira uso de nomes evite Ids
+    - Defina e organize apropriadamente os componentes
+    - Use namespaces de classes de forma consistente (ex myapp-Headerlink)
+    - Mantenha coerência entre mapeamento de nomes de arquivos e namespaces
+    - Evite vazamento estilos fora dos componentes.
+    - Evite vazamento de estilos dentro dos componentes.
+    - Faça uso de pré-processadores (ex SASS)
+    - Respeite limites dos componentes e aprenda padrões e os utilize (OOCSS, BEM, etc)
+
+- Serviços na Web
+ - Introdução
+  - Evolução
+   - Empresas Tradicionais
+   - SOA
+   - WebServices, Microserviços, Eventos
+ - API REST 
+  - Métodos
+   - GET 
+   - POST
+   - PUT
+   - DELETE
+  - Boas Práticas
+   - Organize APIs ao longo de recursos (substantivos e não verbos -Ex. /filme/id e não /filme/consultar/id)
+   - Padronize as suas APIs = adote uma convenção consistente. Uma dica seria usar substantivos no plural para URIs . Ex. /filmes/ator/id
+   - Evite APIs anêmicas. = aquela que não traz o dado representativo. Lembre-se o objetivo do REST é mapear entidades de negócios e não de tabelas no banco de dados.
+   - Crie APIs simples. Evite criar URIs de recursos mais complexos do que coleção/item/coleção
+   - Use protocolo HTTPS/SSL.
+   - Versione suas APIs
+   - Estabeleça paginação para coleções com grandes volumes de dados
+   - Use corretamente os códigos de retorno HTTP. Já vi load balancer da AWS derrubando tasks de serviços imaginando ser um ataque DDOS pelo uso incorreto de responses code.
+  - Exemplo API da Marvel
+
+- Contexto e Complexidade
+ - Tipos de Renderização no Frontend
+  - Client Side Rendering
+  - Server Side Rendering
+  - Universal Rendering - (Rehydration) - Abordagem Hibrida com CSR e SSR
+
+- Abordagens de desenvolvimento
+ - SPA - Single Page Application
+ - Mobile First
+ - PWA - Progressive WebApp
+  - Service worker
+  - Web Manifest  
+
+- Frameworks
+- Frameworks Mobile
+
+
+
+
+
+
+  
